@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-03-15T08:51:47.648403Z",
+  "platform": "iOS",
+  "bug_description": "WiFi screen is not opening",
+  "status": "FAIL",
+  "screenshot": "/Users/divynarayan/ai-regression-agent/evidence/screenshots/ios/run_1773564707_error_1773564875889.png",
+  "video": "/Users/divynarayan/ai-regression-agent/evidence/recordings/ios/run_1773564707_1773564876118.mp4",
+  "error": null
+}

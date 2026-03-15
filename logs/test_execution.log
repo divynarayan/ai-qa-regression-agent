@@ -1,0 +1,30 @@
+2026-03-15 14:22:17,038 [INFO] iOS step 1: action=open_app, target=settings
+2026-03-15 14:22:17,039 [INFO] iOS step 2: action=tap, target=WiFi
+2026-03-15 14:24:35,885 [ERROR] Step failed: Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at XCUITestDriver.doNativeFind (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/commands/find.ts:205:13)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at XCUITestDriver.findNativeElementOrElements (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/commands/find.ts:130:7)
+    at XCUITestDriver.findElOrEls (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/commands/find.ts:54:7)
+    at XCUITestDriver.findElOrElsWithProcessing (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)
+    at XCUITestDriver.findElement (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 112, in _execute_steps_ios
+    raise e
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 104, in _execute_steps_ios
+    el = _find_element_ios(driver, wait, target or "Wi-Fi")
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 55, in _find_element_ios
+    return wait.until(EC.presence_of_element_located((AppiumBy.IOS_PREDICATE, f"label CONTAINS '{target}'")))
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 122, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at XCUITestDriver.doNativeFind (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/commands/find.ts:205:13)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at XCUITestDriver.findNativeElementOrElements (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/commands/find.ts:130:7)
+    at XCUITestDriver.findElOrEls (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/commands/find.ts:54:7)
+    at XCUITestDriver.findElOrElsWithProcessing (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)
+    at XCUITestDriver.findElement (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)
