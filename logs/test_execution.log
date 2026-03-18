@@ -28,3 +28,634 @@ NoSuchElementError: An element could not be located on the page using the given 
     at XCUITestDriver.findElOrEls (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/commands/find.ts:54:7)
     at XCUITestDriver.findElOrElsWithProcessing (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)
     at XCUITestDriver.findElement (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)
+2026-03-16 15:57:15,670 [INFO] iOS step 1: action=open_app, target=settings
+2026-03-16 15:57:15,671 [INFO] iOS step 2: action=tap, target=WiFi
+2026-03-16 15:59:35,681 [ERROR] Step failed: Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at XCUITestDriver.doNativeFind (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/commands/find.ts:205:13)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at XCUITestDriver.findNativeElementOrElements (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/commands/find.ts:130:7)
+    at XCUITestDriver.findElOrEls (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/commands/find.ts:54:7)
+    at XCUITestDriver.findElOrElsWithProcessing (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)
+    at XCUITestDriver.findElement (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 115, in _execute_steps_ios
+    raise e
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 107, in _execute_steps_ios
+    el = _find_element_ios(driver, wait, target or "Wi-Fi")
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 58, in _find_element_ios
+    return wait.until(EC.presence_of_element_located((AppiumBy.IOS_PREDICATE, f"label CONTAINS '{target}'")))
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at XCUITestDriver.doNativeFind (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/commands/find.ts:205:13)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at XCUITestDriver.findNativeElementOrElements (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/commands/find.ts:130:7)
+    at XCUITestDriver.findElOrEls (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/commands/find.ts:54:7)
+    at XCUITestDriver.findElOrElsWithProcessing (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)
+    at XCUITestDriver.findElement (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)
+2026-03-16 16:31:15,386 [INFO] iOS step 1: action=open_app, target=settings
+2026-03-16 16:31:15,387 [INFO] iOS step 2: action=tap, target=WiFi
+2026-03-16 16:33:35,588 [ERROR] Step failed: Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at XCUITestDriver.doNativeFind (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/commands/find.ts:205:13)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at XCUITestDriver.findNativeElementOrElements (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/commands/find.ts:130:7)
+    at XCUITestDriver.findElOrEls (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/commands/find.ts:54:7)
+    at XCUITestDriver.findElOrElsWithProcessing (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)
+    at XCUITestDriver.findElement (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 115, in _execute_steps_ios
+    raise e
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 107, in _execute_steps_ios
+    el = _find_element_ios(driver, wait, target or "Wi-Fi")
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 58, in _find_element_ios
+    return wait.until(EC.presence_of_element_located((AppiumBy.IOS_PREDICATE, f"label CONTAINS '{target}'")))
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at XCUITestDriver.doNativeFind (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/commands/find.ts:205:13)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at XCUITestDriver.findNativeElementOrElements (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/commands/find.ts:130:7)
+    at XCUITestDriver.findElOrEls (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/commands/find.ts:54:7)
+    at XCUITestDriver.findElOrElsWithProcessing (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)
+    at XCUITestDriver.findElement (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)
+2026-03-16 16:33:36,960 [ERROR] Message: Could not find a driver for automationName 'UiAutomator2' and platformName 'Android'. Have you installed a driver that supports those capabilities? Run 'appium driver list --installed' to see. (Lower-level error: Could not find installed driver to support given caps)
+Stacktrace:
+UnknownError: Could not find a driver for automationName 'UiAutomator2' and platformName 'Android'. Have you installed a driver that supports those capabilities? Run 'appium driver list --installed' to see. (Lower-level error: Could not find installed driver to support given caps)
+    at getResponseForW3CError (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.ts:1103:34)
+    at asyncHandler (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.ts:507:57)
+The above error is caused by
+Error: Could not find a driver for automationName 'UiAutomator2' and platformName 'Android'. Have you installed a driver that supports those capabilities? Run 'appium driver list --installed' to see. (Lower-level error: Could not find installed driver to support given caps)
+    at DriverConfig.findMatchingDriver (/Users/divynarayan/.npm-global/lib/node_modules/appium/lib/extension/driver-config.js:173:13)
+    at AppiumDriver.createSession (/Users/divynarayan/.npm-global/lib/node_modules/appium/lib/appium.js:303:35)
+    at runCommandPromise (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/driver.ts:116:20)
+    at AppiumDriver.executeCommand (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/driver.ts:161:15)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at defaultBehavior (/Users/divynarayan/.npm-global/lib/node_modules/appium/lib/appium.js:726:16)
+    at AppiumDriver.executeWrappedCommand (/Users/divynarayan/.npm-global/lib/node_modules/appium/lib/appium.js:843:16)
+    at AppiumDriver.executeCommand (/Users/divynarayan/.npm-global/lib/node_modules/appium/lib/appium.js:742:17)
+    at asyncHandler (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.ts:409:19)
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 266, in run_structured_test
+    driver = webdriver.Remote(command_executor=APPIUM_URL, options=options)
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/appium/webdriver/webdriver.py", line 251, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        command_executor=command_executor,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        client_config=client_config,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 271, in __init__
+    self.start_session(capabilities)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/appium/webdriver/webdriver.py", line 344, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, w3c_caps)
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: Could not find a driver for automationName 'UiAutomator2' and platformName 'Android'. Have you installed a driver that supports those capabilities? Run 'appium driver list --installed' to see. (Lower-level error: Could not find installed driver to support given caps)
+Stacktrace:
+UnknownError: Could not find a driver for automationName 'UiAutomator2' and platformName 'Android'. Have you installed a driver that supports those capabilities? Run 'appium driver list --installed' to see. (Lower-level error: Could not find installed driver to support given caps)
+    at getResponseForW3CError (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.ts:1103:34)
+    at asyncHandler (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.ts:507:57)
+The above error is caused by
+Error: Could not find a driver for automationName 'UiAutomator2' and platformName 'Android'. Have you installed a driver that supports those capabilities? Run 'appium driver list --installed' to see. (Lower-level error: Could not find installed driver to support given caps)
+    at DriverConfig.findMatchingDriver (/Users/divynarayan/.npm-global/lib/node_modules/appium/lib/extension/driver-config.js:173:13)
+    at AppiumDriver.createSession (/Users/divynarayan/.npm-global/lib/node_modules/appium/lib/appium.js:303:35)
+    at runCommandPromise (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/driver.ts:116:20)
+    at AppiumDriver.executeCommand (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/driver.ts:161:15)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at defaultBehavior (/Users/divynarayan/.npm-global/lib/node_modules/appium/lib/appium.js:726:16)
+    at AppiumDriver.executeWrappedCommand (/Users/divynarayan/.npm-global/lib/node_modules/appium/lib/appium.js:843:16)
+    at AppiumDriver.executeCommand (/Users/divynarayan/.npm-global/lib/node_modules/appium/lib/appium.js:742:17)
+    at asyncHandler (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.ts:409:19)
+2026-03-18 16:10:45,699 [INFO] iOS step 1: action=tap, target=Login
+2026-03-18 16:12:39,552 [ERROR] Step failed: Message: 
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 61, in _find_element_ios
+    return wait.until(_visible_predicate)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 250, in _execute_steps_ios
+    raise e
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 238, in _execute_steps_ios
+    el = _find_element_ios(driver, wait, target)
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 68, in _find_element_ios
+    return wait.until(_visible_predicate)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2026-03-18 16:12:42,487 [INFO] iOS step 1: action=tap, target=Login
+2026-03-18 16:14:40,653 [ERROR] Step failed: Message: 
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 61, in _find_element_ios
+    return wait.until(_visible_predicate)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 250, in _execute_steps_ios
+    raise e
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 238, in _execute_steps_ios
+    el = _find_element_ios(driver, wait, target)
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 68, in _find_element_ios
+    return wait.until(_visible_predicate)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2026-03-18 16:24:00,167 [ERROR] Message: Could not find a driver for automationName 'UiAutomator2' and platformName 'Android'. Have you installed a driver that supports those capabilities? Run 'appium driver list --installed' to see. (Lower-level error: Could not find installed driver to support given caps)
+Stacktrace:
+UnknownError: Could not find a driver for automationName 'UiAutomator2' and platformName 'Android'. Have you installed a driver that supports those capabilities? Run 'appium driver list --installed' to see. (Lower-level error: Could not find installed driver to support given caps)
+    at getResponseForW3CError (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.ts:1103:34)
+    at asyncHandler (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.ts:507:57)
+The above error is caused by
+Error: Could not find a driver for automationName 'UiAutomator2' and platformName 'Android'. Have you installed a driver that supports those capabilities? Run 'appium driver list --installed' to see. (Lower-level error: Could not find installed driver to support given caps)
+    at DriverConfig.findMatchingDriver (/Users/divynarayan/.npm-global/lib/node_modules/appium/lib/extension/driver-config.js:173:13)
+    at AppiumDriver.createSession (/Users/divynarayan/.npm-global/lib/node_modules/appium/lib/appium.js:303:35)
+    at runCommandPromise (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/driver.ts:116:20)
+    at AppiumDriver.executeCommand (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/driver.ts:161:15)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at defaultBehavior (/Users/divynarayan/.npm-global/lib/node_modules/appium/lib/appium.js:726:16)
+    at AppiumDriver.executeWrappedCommand (/Users/divynarayan/.npm-global/lib/node_modules/appium/lib/appium.js:843:16)
+    at AppiumDriver.executeCommand (/Users/divynarayan/.npm-global/lib/node_modules/appium/lib/appium.js:742:17)
+    at asyncHandler (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.ts:409:19)
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 441, in run_structured_test
+    driver = webdriver.Remote(command_executor=APPIUM_URL, options=options)
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/appium/webdriver/webdriver.py", line 251, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        command_executor=command_executor,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        client_config=client_config,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 271, in __init__
+    self.start_session(capabilities)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/appium/webdriver/webdriver.py", line 344, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, w3c_caps)
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: Could not find a driver for automationName 'UiAutomator2' and platformName 'Android'. Have you installed a driver that supports those capabilities? Run 'appium driver list --installed' to see. (Lower-level error: Could not find installed driver to support given caps)
+Stacktrace:
+UnknownError: Could not find a driver for automationName 'UiAutomator2' and platformName 'Android'. Have you installed a driver that supports those capabilities? Run 'appium driver list --installed' to see. (Lower-level error: Could not find installed driver to support given caps)
+    at getResponseForW3CError (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.ts:1103:34)
+    at asyncHandler (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.ts:507:57)
+The above error is caused by
+Error: Could not find a driver for automationName 'UiAutomator2' and platformName 'Android'. Have you installed a driver that supports those capabilities? Run 'appium driver list --installed' to see. (Lower-level error: Could not find installed driver to support given caps)
+    at DriverConfig.findMatchingDriver (/Users/divynarayan/.npm-global/lib/node_modules/appium/lib/extension/driver-config.js:173:13)
+    at AppiumDriver.createSession (/Users/divynarayan/.npm-global/lib/node_modules/appium/lib/appium.js:303:35)
+    at runCommandPromise (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/driver.ts:116:20)
+    at AppiumDriver.executeCommand (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/driver.ts:161:15)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at defaultBehavior (/Users/divynarayan/.npm-global/lib/node_modules/appium/lib/appium.js:726:16)
+    at AppiumDriver.executeWrappedCommand (/Users/divynarayan/.npm-global/lib/node_modules/appium/lib/appium.js:843:16)
+    at AppiumDriver.executeCommand (/Users/divynarayan/.npm-global/lib/node_modules/appium/lib/appium.js:742:17)
+    at asyncHandler (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.ts:409:19)
+2026-03-18 16:55:28,093 [INFO] iOS step 1: action=tap, target=Login
+2026-03-18 16:55:31,025 [INFO] iOS step 1: action=tap, target=Login
+2026-03-18 16:56:26,384 [ERROR] Message: Error executing adbExec. Original error: 'Command '/Users/divynarayan/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 install -r --no-incremental /Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v9.11.1.apk' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'uiautomator2ServerInstallTimeout' capability
+Stacktrace:
+UnknownError: Error executing adbExec. Original error: 'Command '/Users/divynarayan/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 install -r --no-incremental /Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v9.11.1.apk' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'uiautomator2ServerInstallTimeout' capability
+    at getResponseForW3CError (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.ts:1103:34)
+    at asyncHandler (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.ts:507:57)
+The above error is caused by
+Error: Error executing adbExec. Original error: 'Command '/Users/divynarayan/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 install -r --no-incremental /Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v9.11.1.apk' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'uiautomator2ServerInstallTimeout' capability
+    at Timeout.<anonymous> (/Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/teen_process/lib/exec.ts:151:35)
+    at listOnTimeout (node:internal/timers:605:17)
+    at processTimers (node:internal/timers:541:7)
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 441, in run_structured_test
+    driver = webdriver.Remote(command_executor=APPIUM_URL, options=options)
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/appium/webdriver/webdriver.py", line 251, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        command_executor=command_executor,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        client_config=client_config,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 271, in __init__
+    self.start_session(capabilities)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/appium/webdriver/webdriver.py", line 344, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, w3c_caps)
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: Error executing adbExec. Original error: 'Command '/Users/divynarayan/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 install -r --no-incremental /Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v9.11.1.apk' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'uiautomator2ServerInstallTimeout' capability
+Stacktrace:
+UnknownError: Error executing adbExec. Original error: 'Command '/Users/divynarayan/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 install -r --no-incremental /Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v9.11.1.apk' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'uiautomator2ServerInstallTimeout' capability
+    at getResponseForW3CError (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.ts:1103:34)
+    at asyncHandler (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.ts:507:57)
+The above error is caused by
+Error: Error executing adbExec. Original error: 'Command '/Users/divynarayan/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 install -r --no-incremental /Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v9.11.1.apk' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'uiautomator2ServerInstallTimeout' capability
+    at Timeout.<anonymous> (/Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/teen_process/lib/exec.ts:151:35)
+    at listOnTimeout (node:internal/timers:605:17)
+    at processTimers (node:internal/timers:541:7)
+2026-03-18 16:56:26,586 [ERROR] Message: Error executing adbExec. Original error: 'Command '/Users/divynarayan/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 install -r --no-incremental /Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v9.11.1.apk' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'uiautomator2ServerInstallTimeout' capability
+Stacktrace:
+UnknownError: Error executing adbExec. Original error: 'Command '/Users/divynarayan/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 install -r --no-incremental /Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v9.11.1.apk' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'uiautomator2ServerInstallTimeout' capability
+    at getResponseForW3CError (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.ts:1103:34)
+    at asyncHandler (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.ts:507:57)
+The above error is caused by
+Error: Error executing adbExec. Original error: 'Command '/Users/divynarayan/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 install -r --no-incremental /Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v9.11.1.apk' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'uiautomator2ServerInstallTimeout' capability
+    at Timeout.<anonymous> (/Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/teen_process/lib/exec.ts:151:35)
+    at listOnTimeout (node:internal/timers:605:17)
+    at processTimers (node:internal/timers:541:7)
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 441, in run_structured_test
+    driver = webdriver.Remote(command_executor=APPIUM_URL, options=options)
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/appium/webdriver/webdriver.py", line 251, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        command_executor=command_executor,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        client_config=client_config,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 271, in __init__
+    self.start_session(capabilities)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/appium/webdriver/webdriver.py", line 344, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, w3c_caps)
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: Error executing adbExec. Original error: 'Command '/Users/divynarayan/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 install -r --no-incremental /Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v9.11.1.apk' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'uiautomator2ServerInstallTimeout' capability
+Stacktrace:
+UnknownError: Error executing adbExec. Original error: 'Command '/Users/divynarayan/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 install -r --no-incremental /Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v9.11.1.apk' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'uiautomator2ServerInstallTimeout' capability
+    at getResponseForW3CError (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.ts:1103:34)
+    at asyncHandler (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.ts:507:57)
+The above error is caused by
+Error: Error executing adbExec. Original error: 'Command '/Users/divynarayan/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 install -r --no-incremental /Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v9.11.1.apk' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'uiautomator2ServerInstallTimeout' capability
+    at Timeout.<anonymous> (/Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/teen_process/lib/exec.ts:151:35)
+    at listOnTimeout (node:internal/timers:605:17)
+    at processTimers (node:internal/timers:541:7)
+2026-03-18 16:56:26,657 [ERROR] Message: Error executing adbExec. Original error: 'Command '/Users/divynarayan/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 install -r --no-incremental /Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v9.11.1.apk' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'uiautomator2ServerInstallTimeout' capability
+Stacktrace:
+UnknownError: Error executing adbExec. Original error: 'Command '/Users/divynarayan/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 install -r --no-incremental /Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v9.11.1.apk' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'uiautomator2ServerInstallTimeout' capability
+    at getResponseForW3CError (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.ts:1103:34)
+    at asyncHandler (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.ts:507:57)
+The above error is caused by
+Error: Error executing adbExec. Original error: 'Command '/Users/divynarayan/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 install -r --no-incremental /Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v9.11.1.apk' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'uiautomator2ServerInstallTimeout' capability
+    at Timeout.<anonymous> (/Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/teen_process/lib/exec.ts:151:35)
+    at listOnTimeout (node:internal/timers:605:17)
+    at processTimers (node:internal/timers:541:7)
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 441, in run_structured_test
+    driver = webdriver.Remote(command_executor=APPIUM_URL, options=options)
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/appium/webdriver/webdriver.py", line 251, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        command_executor=command_executor,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        client_config=client_config,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 271, in __init__
+    self.start_session(capabilities)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/appium/webdriver/webdriver.py", line 344, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, w3c_caps)
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: Error executing adbExec. Original error: 'Command '/Users/divynarayan/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 install -r --no-incremental /Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v9.11.1.apk' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'uiautomator2ServerInstallTimeout' capability
+Stacktrace:
+UnknownError: Error executing adbExec. Original error: 'Command '/Users/divynarayan/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 install -r --no-incremental /Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v9.11.1.apk' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'uiautomator2ServerInstallTimeout' capability
+    at getResponseForW3CError (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.ts:1103:34)
+    at asyncHandler (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.ts:507:57)
+The above error is caused by
+Error: Error executing adbExec. Original error: 'Command '/Users/divynarayan/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 install -r --no-incremental /Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v9.11.1.apk' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'uiautomator2ServerInstallTimeout' capability
+    at Timeout.<anonymous> (/Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/teen_process/lib/exec.ts:151:35)
+    at listOnTimeout (node:internal/timers:605:17)
+    at processTimers (node:internal/timers:541:7)
+2026-03-18 16:56:26,826 [ERROR] Message: Error executing adbExec. Original error: 'Command '/Users/divynarayan/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 install -r --no-incremental /Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v9.11.1.apk' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'uiautomator2ServerInstallTimeout' capability
+Stacktrace:
+UnknownError: Error executing adbExec. Original error: 'Command '/Users/divynarayan/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 install -r --no-incremental /Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v9.11.1.apk' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'uiautomator2ServerInstallTimeout' capability
+    at getResponseForW3CError (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.ts:1103:34)
+    at asyncHandler (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.ts:507:57)
+The above error is caused by
+Error: Error executing adbExec. Original error: 'Command '/Users/divynarayan/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 install -r --no-incremental /Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v9.11.1.apk' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'uiautomator2ServerInstallTimeout' capability
+    at Timeout.<anonymous> (/Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/teen_process/lib/exec.ts:151:35)
+    at listOnTimeout (node:internal/timers:605:17)
+    at processTimers (node:internal/timers:541:7)
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 441, in run_structured_test
+    driver = webdriver.Remote(command_executor=APPIUM_URL, options=options)
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/appium/webdriver/webdriver.py", line 251, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        command_executor=command_executor,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        client_config=client_config,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 271, in __init__
+    self.start_session(capabilities)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/appium/webdriver/webdriver.py", line 344, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, w3c_caps)
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: Error executing adbExec. Original error: 'Command '/Users/divynarayan/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 install -r --no-incremental /Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v9.11.1.apk' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'uiautomator2ServerInstallTimeout' capability
+Stacktrace:
+UnknownError: Error executing adbExec. Original error: 'Command '/Users/divynarayan/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 install -r --no-incremental /Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v9.11.1.apk' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'uiautomator2ServerInstallTimeout' capability
+    at getResponseForW3CError (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.ts:1103:34)
+    at asyncHandler (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.ts:507:57)
+The above error is caused by
+Error: Error executing adbExec. Original error: 'Command '/Users/divynarayan/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 install -r --no-incremental /Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v9.11.1.apk' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'uiautomator2ServerInstallTimeout' capability
+    at Timeout.<anonymous> (/Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/teen_process/lib/exec.ts:151:35)
+    at listOnTimeout (node:internal/timers:605:17)
+    at processTimers (node:internal/timers:541:7)
+2026-03-18 16:56:48,107 [INFO] Android step 1: action=tap, target=Login
+2026-03-18 16:56:59,786 [ERROR] Step failed: Message: 
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 61, in _find_element_ios
+    return wait.until(_visible_predicate)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 250, in _execute_steps_ios
+    raise e
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 238, in _execute_steps_ios
+    el = _find_element_ios(driver, wait, target)
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 68, in _find_element_ios
+    return wait.until(_visible_predicate)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2026-03-18 16:57:07,214 [ERROR] Step failed: Message: 'POST /elements' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+UnknownError: 'POST /elements' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.command (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/jsonwp-proxy/proxy.js:332:13)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at AndroidUiautomator2Driver.doFindElementOrEls (/Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/lib/commands/find.ts:51:11)
+    at doFind (/Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:54:17)
+    at wrappedCondFn (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/timeout.ts:114:14)
+    at spin (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/asyncbox/lib/asyncbox.js:219:20)
+    at waitForCondition (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/asyncbox/lib/asyncbox.js:236:10)
+    at AndroidUiautomator2Driver.implicitWaitForCondition (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/timeout.ts:116:12)
+    at AndroidUiautomator2Driver.findElOrEls (/Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:77:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)
+    at AndroidUiautomator2Driver.findElements (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:79:12)
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 92, in _find_element_android
+    return wait.until(_visible_predicate)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 112, in until
+    value = method(self._driver)
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 82, in _visible_predicate
+    els = _driver.find_elements(*sel)
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 847, in find_elements
+    return self.execute(Command.FIND_ELEMENTS, {"using": by, "value": value})["value"] or []
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/appium/webdriver/errorhandler.py", line 125, in check_response
+    raise exception_class(msg=message, stacktrace=format_stacktrace(stacktrace))
+selenium.common.exceptions.WebDriverException: Message: 'POST /elements' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+UnknownError: 'POST /elements' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.command (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/jsonwp-proxy/proxy.js:332:13)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at AndroidUiautomator2Driver.doFindElementOrEls (/Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/lib/commands/find.ts:51:11)
+    at doFind (/Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:54:17)
+    at wrappedCondFn (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/timeout.ts:114:14)
+    at spin (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/asyncbox/lib/asyncbox.js:219:20)
+    at waitForCondition (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/asyncbox/lib/asyncbox.js:236:10)
+    at AndroidUiautomator2Driver.implicitWaitForCondition (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/timeout.ts:116:12)
+    at AndroidUiautomator2Driver.findElOrEls (/Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:77:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)
+    at AndroidUiautomator2Driver.findElements (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:79:12)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 333, in _execute_steps_android
+    raise e
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 321, in _execute_steps_android
+    el = _find_element_android(driver, wait, target)
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 102, in _find_element_android
+    return wait.until(_visible_predicate)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 112, in until
+    value = method(self._driver)
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 82, in _visible_predicate
+    els = _driver.find_elements(*sel)
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 847, in find_elements
+    return self.execute(Command.FIND_ELEMENTS, {"using": by, "value": value})["value"] or []
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/appium/webdriver/errorhandler.py", line 125, in check_response
+    raise exception_class(msg=message, stacktrace=format_stacktrace(stacktrace))
+selenium.common.exceptions.WebDriverException: Message: 'POST /elements' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+UnknownError: 'POST /elements' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.command (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/jsonwp-proxy/proxy.js:332:13)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at AndroidUiautomator2Driver.doFindElementOrEls (/Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/lib/commands/find.ts:51:11)
+    at doFind (/Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:54:17)
+    at wrappedCondFn (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/timeout.ts:114:14)
+    at spin (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/asyncbox/lib/asyncbox.js:219:20)
+    at waitForCondition (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/asyncbox/lib/asyncbox.js:236:10)
+    at AndroidUiautomator2Driver.implicitWaitForCondition (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/timeout.ts:116:12)
+    at AndroidUiautomator2Driver.findElOrEls (/Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:77:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)
+    at AndroidUiautomator2Driver.findElements (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:79:12)
+2026-03-18 16:57:15,458 [INFO] Android step 1: action=tap, target=Login
+2026-03-18 16:57:15,484 [ERROR] Step failed: Message: 'POST /elements' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+UnknownError: 'POST /elements' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.command (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/jsonwp-proxy/proxy.js:332:13)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at AndroidUiautomator2Driver.doFindElementOrEls (/Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/lib/commands/find.ts:51:11)
+    at doFind (/Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:54:17)
+    at wrappedCondFn (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/timeout.ts:114:14)
+    at spin (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/asyncbox/lib/asyncbox.js:219:20)
+    at waitForCondition (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/asyncbox/lib/asyncbox.js:236:10)
+    at AndroidUiautomator2Driver.implicitWaitForCondition (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/timeout.ts:116:12)
+    at AndroidUiautomator2Driver.findElOrEls (/Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:77:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)
+    at AndroidUiautomator2Driver.findElements (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:79:12)
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 92, in _find_element_android
+    return wait.until(_visible_predicate)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 112, in until
+    value = method(self._driver)
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 82, in _visible_predicate
+    els = _driver.find_elements(*sel)
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 847, in find_elements
+    return self.execute(Command.FIND_ELEMENTS, {"using": by, "value": value})["value"] or []
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/appium/webdriver/errorhandler.py", line 125, in check_response
+    raise exception_class(msg=message, stacktrace=format_stacktrace(stacktrace))
+selenium.common.exceptions.WebDriverException: Message: 'POST /elements' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+UnknownError: 'POST /elements' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.command (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/jsonwp-proxy/proxy.js:332:13)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at AndroidUiautomator2Driver.doFindElementOrEls (/Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/lib/commands/find.ts:51:11)
+    at doFind (/Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:54:17)
+    at wrappedCondFn (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/timeout.ts:114:14)
+    at spin (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/asyncbox/lib/asyncbox.js:219:20)
+    at waitForCondition (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/asyncbox/lib/asyncbox.js:236:10)
+    at AndroidUiautomator2Driver.implicitWaitForCondition (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/timeout.ts:116:12)
+    at AndroidUiautomator2Driver.findElOrEls (/Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:77:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)
+    at AndroidUiautomator2Driver.findElements (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:79:12)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 333, in _execute_steps_android
+    raise e
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 321, in _execute_steps_android
+    el = _find_element_android(driver, wait, target)
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 102, in _find_element_android
+    return wait.until(_visible_predicate)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 112, in until
+    value = method(self._driver)
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 82, in _visible_predicate
+    els = _driver.find_elements(*sel)
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 847, in find_elements
+    return self.execute(Command.FIND_ELEMENTS, {"using": by, "value": value})["value"] or []
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/appium/webdriver/errorhandler.py", line 125, in check_response
+    raise exception_class(msg=message, stacktrace=format_stacktrace(stacktrace))
+selenium.common.exceptions.WebDriverException: Message: 'POST /elements' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+UnknownError: 'POST /elements' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.command (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/jsonwp-proxy/proxy.js:332:13)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at AndroidUiautomator2Driver.doFindElementOrEls (/Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/lib/commands/find.ts:51:11)
+    at doFind (/Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:54:17)
+    at wrappedCondFn (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/timeout.ts:114:14)
+    at spin (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/asyncbox/lib/asyncbox.js:219:20)
+    at waitForCondition (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/asyncbox/lib/asyncbox.js:236:10)
+    at AndroidUiautomator2Driver.implicitWaitForCondition (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/timeout.ts:116:12)
+    at AndroidUiautomator2Driver.findElOrEls (/Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:77:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)
+    at AndroidUiautomator2Driver.findElements (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:79:12)
+2026-03-18 16:57:27,604 [ERROR] Step failed: Message: 
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 61, in _find_element_ios
+    return wait.until(_visible_predicate)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 250, in _execute_steps_ios
+    raise e
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 238, in _execute_steps_ios
+    el = _find_element_ios(driver, wait, target)
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 68, in _find_element_ios
+    return wait.until(_visible_predicate)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2026-03-18 16:57:50,126 [INFO] iOS step 1: action=tap, target=Login
+2026-03-18 16:59:45,832 [ERROR] Step failed: Message: 
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 61, in _find_element_ios
+    return wait.until(_visible_predicate)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 250, in _execute_steps_ios
+    raise e
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 238, in _execute_steps_ios
+    el = _find_element_ios(driver, wait, target)
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 68, in _find_element_ios
+    return wait.until(_visible_predicate)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+

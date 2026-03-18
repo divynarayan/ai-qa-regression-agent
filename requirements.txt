@@ -1,3 +1,7 @@
 streamlit>=1.41.0
 pandas>=2.2.0
 numpy>=1.26.0
+pyyaml>=6.0.1
+appium-python-client>=4.4.0
+selenium>=4.17.0
+requests>=2.31.0

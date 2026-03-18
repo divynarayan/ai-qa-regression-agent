@@ -1,278 +1,225 @@
-"""
-AI QA Regression Testing Agent — production dashboard.
-Flow: Bug description → Generate structured test steps (JSON) → Run iOS/Android via executor →
-      Capture evidence → PASS/FAIL + screenshot/video. Sidebar: system status. Last 5 runs in history.
-"""
-
 import json
+import yaml
 import subprocess
 import sys
 from pathlib import Path
-
 import streamlit as st
 
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
-if str(PROJECT_ROOT) not in sys.path:
-    sys.path.insert(0, str(PROJECT_ROOT))
+from ai_engine.ollama_helper import generate_yaml_from_ai, chat_with_ai
 
-REPORTS_SCREENSHOTS = PROJECT_ROOT / "reports" / "screenshots"
-REPORTS_RECORDINGS = PROJECT_ROOT / "reports" / "recordings"
-EVIDENCE_SCREENSHOTS = PROJECT_ROOT / "evidence" / "screenshots"
-EVIDENCE_RECORDINGS = PROJECT_ROOT / "evidence" / "recordings"
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
 APPIUM_URL = "http://127.0.0.1:4723"
 
 
-def check_appium_running() -> bool:
+# ---------------- SYSTEM CHECKS ---------------- #
+
+def check_appium_running():
     try:
         import urllib.request
-        req = urllib.request.urlopen(f"{APPIUM_URL}/status", timeout=2)
-        return req.status == 200
-    except Exception:
+        res = urllib.request.urlopen(f"{APPIUM_URL}/status", timeout=2)
+        return res.status == 200
+    except:
         return False
 
 
-def check_ios_simulator_connected() -> bool:
+def check_ios():
     try:
         proc = subprocess.run(
             ["xcrun", "simctl", "list", "devices", "booted"],
-            capture_output=True,
-            text=True,
-            timeout=5,
+            capture_output=True, text=True
         )
-        return proc.returncode == 0 and "Booted" in (proc.stdout or "")
-    except Exception:
+        return "Booted" in proc.stdout
+    except:
         return False
 
 
-def check_android_emulator_connected() -> bool:
+def check_android():
     try:
-        proc = subprocess.run(
-            ["adb", "devices"],
-            capture_output=True,
-            text=True,
-            timeout=5,
-        )
-        out = (proc.stdout or "") or ""
-        lines = [l for l in out.splitlines() if "device" in l and "emulator" in l or "\tdevice" in l]
-        return len(lines) >= 1
-    except Exception:
+        proc = subprocess.run(["adb", "devices"], capture_output=True, text=True)
+        return "device" in proc.stdout
+    except:
         return False
 
 
-def main() -> None:
-    st.set_page_config(
-        page_title="AI QA Regression Testing Agent",
-        layout="wide",
-        initial_sidebar_state="expanded",
-    )
+# ---------------- MAIN APP ---------------- #
 
-    # ----- Sidebar: System Status (green indicators) -----
+def main():
+    st.set_page_config(page_title="AI QA Agent", layout="wide")
+
+    # Sidebar
     with st.sidebar:
         st.header("System Status")
-        appium_ok = check_appium_running()
-        st.markdown(f"**Appium Server:** {'Running' if appium_ok else 'Not Running'}")
-        if appium_ok:
-            st.success("Appium is reachable")
-        else:
-            st.error("Start Appium (e.g. `appium`)")
 
-        ios_ok = check_ios_simulator_connected()
-        st.markdown(f"**iOS Simulator:** {'Connected' if ios_ok else 'Not Connected'}")
-        if ios_ok:
-            st.success("Simulator is booted")
+        if check_appium_running():
+            st.success("Appium Running")
         else:
-            st.warning("Open Simulator (e.g. `open -a Simulator`)")
+            st.error("Start Appium")
 
-        android_ok = check_android_emulator_connected()
-        st.markdown(f"**Android Emulator:** {'Connected' if android_ok else 'Not Connected'}")
-        if android_ok:
-            st.success("Emulator is connected")
+        if check_ios():
+            st.success("iOS Connected")
         else:
-            st.warning("Start an Android AVD")
+            st.warning("Start iOS Simulator")
+
+        if check_android():
+            st.success("Android Connected")
+        else:
+            st.warning("Start Android Emulator")
 
     st.title("AI QA Regression Testing Agent")
     st.markdown("---")
 
-    # ----- Section 1: Bug Description -----
+    # ---------------- BUG ---------------- #
     st.header("Bug Description")
-    bug_description = st.text_area(
-        "Enter the bug description",
-        placeholder="e.g. WiFi screen crashes when opened",
-        height=120,
-        key="bug_description",
+    bug_description = st.text_area("Enter bug")
+
+    # ---------------- MANUAL STEPS ---------------- #
+    st.header("Manual Steps")
+    manual_steps = st.text_area("Enter steps")
+
+    # ---------------- FIGMA ---------------- #
+    figma = st.file_uploader("Upload Screenshot (optional)", type=["png", "jpg"])
+    if figma:
+        st.image(figma)
+
+    # ---------------- AI YAML GENERATION (OLLAMA) ---------------- #
+    st.header("AI YAML Generation (Ollama)")
+
+    if st.button("🚀 Generate YAML with AI"):
+        if not (bug_description or "").strip() or not (manual_steps or "").strip():
+            st.warning("Please enter bug description and manual steps")
+        else:
+            with st.spinner("AI generating..."):
+                yaml_output = generate_yaml_from_ai(bug_description, manual_steps)
+
+            st.session_state["generated_yaml"] = yaml_output
+
+            # Extract steps immediately for execution.
+            parsed = yaml.safe_load(yaml_output) or {}
+            if isinstance(parsed, dict):
+                st.session_state["generated_steps"] = parsed.get("steps", [])
+
+    # Always display the latest generated YAML + extracted steps (if present)
+    if st.session_state.get("generated_yaml"):
+        st.subheader("Generated YAML")
+        st.code(st.session_state["generated_yaml"], language="yaml")
+
+        if "generated_steps" in st.session_state:
+            st.caption("Extracted steps")
+            st.json(st.session_state["generated_steps"])
+
+    st.markdown("---")
+
+    # ---------------- JSON INPUT (MANUAL) ---------------- #
+    st.header("JSON Test Data (Manual)")
+    json_text = st.text_area(
+        "Paste JSON test data (manual input)",
+        value=st.session_state.get("json_test_data", '{\n  "phone_number": "66728317",\n  "password": "Test@1010"\n}'),
+        height=140,
+        key="json_test_data",
     )
-
-    # ----- Section 2: Generate Test Steps (structured JSON) -----
-    # Do not assign to st.session_state["bug_description"] — the widget with key="bug_description" owns it.
-    st.header("Generate Test Steps")
-    if st.button("Generate Test Steps"):
-        if not (bug_description or "").strip():
-            st.warning("Enter a bug description first.")
-        else:
-            try:
-                from ai_engine.test_step_generator import generate_executable_steps
-                steps = generate_executable_steps(bug_description.strip())
-                st.session_state["generated_steps"] = steps
-                st.session_state["last_bug_description"] = bug_description.strip()
-            except Exception as e:
-                st.error(f"Failed to generate steps: {e}")
-                st.session_state["generated_steps"] = None
-
-    if st.session_state.get("generated_steps") is not None:
-        steps = st.session_state["generated_steps"]
-        st.subheader("Generated steps (executable JSON)")
-        st.json(steps)
-
-    st.markdown("---")
-
-    # ----- Section 3: Automation Testing -----
-    st.header("Automation Testing")
-    col_ios, col_android = st.columns(2)
-    run_ios = col_ios.button("Run iOS Regression Test", key="run_ios")
-    run_android = col_android.button("Run Android Regression Test", key="run_android")
-
-    structured_steps = st.session_state.get("generated_steps")
-    bug_desc = st.session_state.get("last_bug_description", "")
-
-    # Run iOS: use executor if structured steps exist, else legacy ios_test.py
-    if run_ios:
-        if structured_steps:
-            try:
-                from automation.executor import run_structured_test
-                from reports.history import save_run_report
-                with st.spinner("Running test…"):
-                    result = run_structured_test("iOS", structured_steps, bug_desc)
-                save_run_report(result)
-                st.session_state["ios_result"] = result
-            except Exception as e:
-                st.session_state["ios_result"] = {"status": "FAIL", "error": str(e), "screenshot": None, "video": None}
-        else:
-            # Legacy: run ios_test.py
-            ios_script = PROJECT_ROOT / "ios_test.py"
-            if not ios_script.exists():
-                st.error(f"Script not found: {ios_script}")
-            else:
-                with st.spinner("Running test…"):
-                    proc = subprocess.run(
-                        [sys.executable, str(ios_script)],
-                        cwd=str(PROJECT_ROOT),
-                        capture_output=True,
-                        text=True,
-                        timeout=120,
-                    )
-                passed = proc.returncode == 0 and "PASS" in (proc.stdout or "")
-                from datetime import datetime
-                from reports.history import save_run_report
-                save_run_report({
-                    "timestamp": datetime.utcnow().isoformat() + "Z",
-                    "platform": "iOS",
-                    "bug_description": bug_desc,
-                    "status": "PASS" if passed else "FAIL",
-                    "screenshot": str(REPORTS_SCREENSHOTS / "ios_wifi_settings.png") if (REPORTS_SCREENSHOTS / "ios_wifi_settings.png").exists() else None,
-                    "video": None,
-                })
-                st.session_state["ios_result"] = {
-                    "status": "PASS" if passed else "FAIL",
-                    "error": (proc.stderr or "").strip() or None,
-                    "screenshot": str(REPORTS_SCREENSHOTS / "ios_wifi_settings.png") if (REPORTS_SCREENSHOTS / "ios_wifi_settings.png").exists() else str(REPORTS_SCREENSHOTS / "ios_wifi_error.png") if (REPORTS_SCREENSHOTS / "ios_wifi_error.png").exists() else None,
-                    "video": None,
-                }
-
-    # Run Android: use executor if structured steps exist, else legacy android_test
-    if run_android:
-        if structured_steps:
-            try:
-                from automation.executor import run_structured_test
-                from reports.history import save_run_report
-                with st.spinner("Running test…"):
-                    result = run_structured_test("Android", structured_steps, bug_desc)
-                save_run_report(result)
-                st.session_state["android_result"] = result
-            except Exception as e:
-                st.session_state["android_result"] = {"status": "FAIL", "error": str(e), "screenshot": None, "video": None}
-        else:
-            with st.spinner("Running test…"):
-                proc = subprocess.run(
-                    [sys.executable, "-m", "automation.android_test"],
-                    cwd=str(PROJECT_ROOT),
-                    capture_output=True,
-                    text=True,
-                    timeout=120,
-                )
-            passed = proc.returncode == 0 and "PASS" in (proc.stdout or "")
-            from datetime import datetime
-            from reports.history import save_run_report
-            save_run_report({
-                "timestamp": datetime.utcnow().isoformat() + "Z",
-                "platform": "Android",
-                "bug_description": bug_desc,
-                "status": "PASS" if passed else "FAIL",
-                "screenshot": str(REPORTS_SCREENSHOTS / "android_wifi_settings.png") if (REPORTS_SCREENSHOTS / "android_wifi_settings.png").exists() else None,
-                "video": None,
-            })
-            st.session_state["android_result"] = {
-                "status": "PASS" if passed else "FAIL",
-                "error": (proc.stderr or "").strip() or None,
-                "screenshot": str(REPORTS_SCREENSHOTS / "android_wifi_settings.png") if (REPORTS_SCREENSHOTS / "android_wifi_settings.png").exists() else str(REPORTS_SCREENSHOTS / "android_wifi_error.png") if (REPORTS_SCREENSHOTS / "android_wifi_error.png").exists() else None,
-                "video": None,
-            }
-
-    st.markdown("---")
-
-    # ----- Section 4: Results & Evidence -----
-    st.header("Results & Evidence")
-
-    def show_result(platform: str, result: dict):
-        if not result:
-            return
-        status = result.get("status", "FAIL")
-        color = "green" if status == "PASS" else "red"
-        st.markdown(
-            f"**Result:** <span style='color:{color}; font-weight:bold; font-size:1.2em'>{status}</span>",
-            unsafe_allow_html=True,
-        )
-        if result.get("error"):
-            st.code(result["error"], language="text")
-        screenshot = result.get("screenshot")
-        if screenshot and Path(screenshot).exists():
-            st.caption("Screenshot")
-            st.image(screenshot, use_container_width=True)
-        else:
-            st.caption("Screenshot: not available")
-        video = result.get("video")
-        if video and Path(video).exists():
-            st.caption("Recording")
-            st.video(video)
-        else:
-            st.caption("No recording for this run.")
-
-    if st.session_state.get("ios_result"):
-        st.subheader("iOS Test")
-        show_result("iOS", st.session_state["ios_result"])
-    if st.session_state.get("android_result"):
-        st.subheader("Android Test")
-        show_result("Android", st.session_state["android_result"])
-    if not st.session_state.get("ios_result") and not st.session_state.get("android_result"):
-        st.info("Run an iOS or Android test to see results and evidence here.")
-
-    st.markdown("---")
-
-    # ----- Section 5: Test History (last 5) -----
-    st.header("Test History (last 5 runs)")
     try:
-        from reports.history import get_last_reports
-        history = get_last_reports(5)
-        if history:
-            for r in history:
-                platform = r.get("platform", "?")
-                status = r.get("status", "?")
-                ts = r.get("timestamp", "")[:19]
-                st.markdown(f"**{ts}** | {platform} | **{status}**")
-        else:
-            st.caption("No test history yet.")
-    except Exception:
-        st.caption("No test history yet.")
+        test_data = json.loads(json_text) if json_text else {}
+        if not isinstance(test_data, dict):
+            raise ValueError("JSON must be an object")
+        st.caption("Parsed JSON")
+        st.json(test_data)
+        st.session_state["parsed_test_data"] = test_data
+    except Exception as e:
+        st.warning(f"Invalid JSON: {e}")
+        st.session_state["parsed_test_data"] = {}
 
+    # ---------------- RUN ---------------- #
+    st.header("Automation Testing")
+
+    col1, col2 = st.columns(2)
+
+    if col1.button("Run iOS Test"):
+        run_test("iOS")
+
+    if col2.button("Run Android Test"):
+        run_test("Android")
+
+    # ---------------- RESULT ---------------- #
+    st.header("Result")
+
+    if "result" in st.session_state:
+        res = st.session_state["result"]
+
+        if res["status"] == "PASS":
+            st.success("PASS")
+        else:
+            st.error("FAIL")
+
+        if res.get("error"):
+            st.code(res["error"])
+
+        if res.get("screenshot"):
+            st.image(res["screenshot"])
+
+    st.markdown("---")
+
+    # ---------------- AI QA CHATBOT (OLLAMA) ---------------- #
+    st.header("🤖 AI QA Chatbot")
+
+    if "chat_history" not in st.session_state:
+        st.session_state.chat_history = []
+
+    user_input = st.chat_input("Ask AI to test something...")
+
+    if user_input:
+        st.session_state.chat_history.append({"role": "user", "content": user_input})
+        with st.spinner("Ollama thinking..."):
+            ai_response = chat_with_ai(user_input)
+        st.session_state.chat_history.append({"role": "assistant", "content": ai_response})
+
+    for msg in st.session_state.chat_history:
+        with st.chat_message(msg["role"]):
+            st.write(msg["content"])
+
+
+# ---------------- EXECUTION ---------------- #
+
+def run_test(platform):
+    # Prefer AI-generated steps; fallback to legacy "steps" if present.
+    steps = st.session_state.get("generated_steps") or st.session_state.get("steps")
+
+    if not steps:
+        st.warning("Generate steps first")
+        return
+
+    try:
+        from automation.executor import run_structured_test, run_test_case
+
+        with st.spinner(f"Running {platform} test..."):
+            # If we have full YAML + JSON, run via run_test_case for variable substitution.
+            if st.session_state.get("generated_yaml"):
+                test_case = yaml.safe_load(st.session_state["generated_yaml"]) or {}
+                test_data = st.session_state.get("parsed_test_data") or {}
+                result = run_test_case(test_case, test_data, platform=platform)
+            else:
+                result = run_structured_test(platform, steps, "")
+
+        st.session_state["result"] = result
+
+    except Exception as e:
+        st.session_state["result"] = {
+            "status": "FAIL",
+            "error": str(e)
+        }
+
+
+# ---------------- RUN ---------------- #
 
 if __name__ == "__main__":
     main()
+
+
+# ---------------- COMPATIBILITY WRAPPERS ---------------- #
+# Keep `app.py` imports working if internal check names differ.
+
+def check_android_emulator_connected():
+    return check_android()
+
+
+def check_ios_simulator_connected():
+    return check_ios()

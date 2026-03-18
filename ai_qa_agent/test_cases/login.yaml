@@ -1,0 +1,22 @@
+id: TC_LOGIN_001
+module: login
+description: Verify login flow
+
+steps:
+  - action: open_app
+  - action: start_recording
+  - action: tap
+    target: "Ingresar"
+  - action: input
+    field: "Teléfono"
+    value: "{{phone_number}}"
+  - action: input
+    field: "Contraseña"
+    value: "{{password}}"
+  - action: tap
+    target: "Entrar"
+  - action: verify_element
+    target: "Home"
+  - action: capture_screenshot
+  - action: stop_recording
+

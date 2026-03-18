@@ -1,0 +1,16 @@
+platform: ios
+appium_url: "http://127.0.0.1:4723"
+
+# iOS
+device_name: "iPhone 16"
+platform_version: "17"
+bundle_id: "com.example.app"
+
+# Android (optional defaults)
+app_package: "com.example.app"
+app_activity: ".MainActivity"
+
+# Evidence / reporting
+auto_record_video: true
+auto_screenshot_on_failure: true
+

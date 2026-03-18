@@ -5,6 +5,7 @@ Used by the automation executor and integrated with test execution logging.
 """
 
 import base64
+import os
 import time
 from pathlib import Path
 from typing import Optional
@@ -16,11 +17,18 @@ EVIDENCE_RECORDINGS = PROJECT_ROOT / "evidence" / "recordings"
 
 
 def _ensure_dirs() -> None:
+    # Use both os.makedirs and Path.mkdir to be robust in different runtimes.
+    os.makedirs(EVIDENCE_SCREENSHOTS, exist_ok=True)
+    os.makedirs(EVIDENCE_RECORDINGS, exist_ok=True)
     EVIDENCE_SCREENSHOTS.mkdir(parents=True, exist_ok=True)
     EVIDENCE_RECORDINGS.mkdir(parents=True, exist_ok=True)
 
 
-def capture_screenshot(driver, prefix: str = "step", subdir: Optional[str] = None) -> str:
+def capture_screenshot(
+    driver,
+    prefix: str = "step",
+    subdir: Optional[str] = None,
+) -> str:
     """
     Capture screenshot from Appium driver and save to evidence/screenshots.
     Returns absolute path of the saved file.
@@ -40,10 +48,15 @@ def start_recording(driver) -> None:
     try:
         driver.start_recording_screen()
     except Exception:
+        # Recording is optional; ignore capability issues.
         pass
 
 
-def stop_recording(driver, prefix: str = "test", subdir: Optional[str] = None) -> Optional[str]:
+def stop_recording(
+    driver,
+    prefix: str = "test",
+    subdir: Optional[str] = None,
+) -> Optional[str]:
     """
     Stop Appium screen recording and save to evidence/recordings.
     Returns path to saved .mp4 or None on failure.
