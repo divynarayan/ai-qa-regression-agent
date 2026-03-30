@@ -16,7 +16,7 @@ steps:
   - action: tap
     target: "Entrar"
   - action: verify_element
-    target: "Home"
+    target: "Inicio"
   - action: capture_screenshot
   - action: stop_recording
 

@@ -4,7 +4,7 @@ Appium automation for iOS Simulator: open Settings → Wi-Fi → screenshot → 
 Run with: python ios_test.py
 Requires:
 - Appium server running at http://127.0.0.1:4723
-- iOS Simulator booted (e.g. iPhone 16e)
+- iOS Simulator booted (e.g. iPhone 17 Pro)
 """
 
 import sys
@@ -25,7 +25,7 @@ from selenium.webdriver.support import expected_conditions as EC
 APPIUM_URL = "http://127.0.0.1:4723"
 
 # UPDATE IF NEEDED → change device name if your simulator is different
-DEVICE_NAME = "iPhone 16e"
+DEVICE_NAME = "iPhone 17 Pro"
 
 # UPDATE IF NEEDED → change iOS version if your simulator is different
 IOS_VERSION = "26.3"

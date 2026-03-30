@@ -5,3 +5,5 @@ pyyaml>=6.0.1
 appium-python-client>=4.4.0
 selenium>=4.17.0
 requests>=2.31.0
+pdfplumber>=0.11.0
+junit-xml>=1.9

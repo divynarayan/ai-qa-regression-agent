@@ -30,6 +30,36 @@ from ui.dashboard import (  # type: ignore[attr-defined]
 BUG_ID_REGEX = re.compile(r"\b(BUG|APP|AC)-\d+\b", re.IGNORECASE)
 
 
+def _normalize_ui_label(label: str, action: str) -> str:
+    raw = (label or "").strip()
+    low = raw.lower()
+    compact = re.sub(r"[^a-z0-9]+", " ", low).strip()
+
+    if action == "tap":
+        if compact in {"login", "log in", "sign in", "login button", "sign in button", "my account login"}:
+            return "Entrar a mi cuenta"
+        if compact in {"submit", "submit login", "continue login", "enter", "entrar"}:
+            return "Entrar"
+        if compact in {"register", "sign up", "signup", "create account"}:
+            return "Registrarme"
+        if compact in {"more", "menu", "mas", "más"}:
+            return "Más"
+
+    if action == "input":
+        if compact in {"phone", "phone number", "mobile", "mobile number", "telephone", "username"}:
+            return "Teléfono"
+        if compact in {"password", "passcode", "pwd"}:
+            return "Contraseña"
+
+    if action == "verify_element":
+        if compact in {"home", "dashboard", "main screen", "start"}:
+            return "Inicio"
+        if compact in {"validation code", "verification code", "otp"}:
+            return "Código de validación"
+
+    return raw
+
+
 def _ensure_session_defaults() -> None:
     st.session_state.setdefault("chat_messages", [])
     st.session_state.setdefault("agent_yaml", "")
@@ -129,11 +159,14 @@ def _build_bdd(bug_id: str, bug_description: str, manual_steps: List[str]) -> st
     for s in manual_steps:
         action, meta = _infer_step_action(s)
         if action == "tap":
-            lines.append(f'When the user taps the "{meta.get("target")}" button')
+            target = _normalize_ui_label(str(meta.get("target") or ""), "tap")
+            lines.append(f'When the user taps the "{target}" button')
         elif action == "input":
-            lines.append(f'And the user enters a value into "{meta.get("field")}"')
+            field = _normalize_ui_label(str(meta.get("field") or ""), "input")
+            lines.append(f'And the user enters a value into "{field}"')
         elif action == "verify_element":
-            lines.append(f'Then the user should see "{meta.get("target")}"')
+            target = _normalize_ui_label(str(meta.get("target") or ""), "verify_element")
+            lines.append(f'Then the user should see "{target}"')
         elif action == "scroll":
             lines.append("And the user scrolls to find the next element")
         elif action == "open_app":
@@ -179,11 +212,11 @@ def _generate_yaml_from_manual(
             raise ValueError(
                 f'Unable to confidently convert this manual step into automation: "{s}". '
                 "Please rephrase it using action verbs like tap/input/verify/scroll and include quoted labels, "
-                'e.g. Tap "Login", Input "Password", Verify "Home".'
+                'e.g. Tap "Entrar a mi cuenta", Input "Contraseña", Verify "Inicio".'
             )
 
         if action == "tap":
-            label = (meta.get("target") or "").strip()
+            label = _normalize_ui_label((meta.get("target") or "").strip(), "tap")
             if not label:
                 raise ValueError(f'Please specify what to tap in step: "{s}" (e.g. Tap "Login").')
             key = re.sub(r"[^a-zA-Z0-9_]+", "_", label).strip("_").lower() + "_button"
@@ -195,7 +228,7 @@ def _generate_yaml_from_manual(
             expectations.append({"step": s, "expected": f'The app registers a tap on "{label}".'})
 
         elif action == "input":
-            field = (meta.get("field") or "").strip()
+            field = _normalize_ui_label((meta.get("field") or "").strip(), "input")
             value = (meta.get("value") or "").strip()
             if not field:
                 raise ValueError(f'Please specify which field to input in step: "{s}" (e.g. Input "Password").')
@@ -212,9 +245,9 @@ def _generate_yaml_from_manual(
             expectations.append({"step": s, "expected": f'The field "{field}" is populated.'})
 
         elif action == "verify_element":
-            target = (meta.get("target") or "").strip()
+            target = _normalize_ui_label((meta.get("target") or "").strip(), "verify_element")
             if not target:
-                raise ValueError(f'Please specify what to verify in step: "{s}" (e.g. Verify "Home").')
+                raise ValueError(f'Please specify what to verify in step: "{s}" (e.g. Verify "Inicio").')
             steps.append({"action": "verify_element", "target": target})
             expectations.append({"step": s, "expected": f'The UI shows "{target}".'})
 
@@ -377,9 +410,9 @@ def _render_ai_agent_mode() -> None:
                 f"I couldn't generate automation yet.\n\n"
                 f"Reason: {e}\n\n"
                 "Please provide manual steps using clear verbs and quoted labels, for example:\n"
-                '- Tap "Login"\n'
-                '- Input "Password"\n'
-                '- Verify "Home"\n'
+                '- Tap "Entrar a mi cuenta"\n'
+                '- Input "Contraseña"\n'
+                '- Verify "Inicio"\n'
             )
             st.session_state["chat_messages"].append({"role": "assistant", "content": assistant_text})
             with st.chat_message("assistant"):
@@ -550,4 +583,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

@@ -53,7 +53,7 @@ def _default_android_config() -> AppiumConfig:
 def _default_ios_config() -> AppiumConfig:
     return AppiumConfig(
         platform_name="iOS",
-        device_name="iPhone Simulator",
+        device_name="iPhone 17 Pro",
         bundle_id="com.example.app",
     )
 

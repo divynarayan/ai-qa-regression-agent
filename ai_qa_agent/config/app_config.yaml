@@ -2,8 +2,8 @@ platform: ios
 appium_url: "http://127.0.0.1:4723"
 
 # iOS
-device_name: "iPhone 16"
-platform_version: "17"
+device_name: "iPhone 17 Pro"
+platform_version: "26.3"
 bundle_id: "com.example.app"
 
 # Android (optional defaults)

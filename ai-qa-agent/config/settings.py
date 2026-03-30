@@ -13,7 +13,7 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 APPIUM_URL = os.environ.get("APPIUM_URL", "http://127.0.0.1:4723")
 
 # iOS Simulator (override via env if needed)
-IOS_DEVICE_NAME = os.environ.get("IOS_DEVICE_NAME", "iPhone 16")
+IOS_DEVICE_NAME = os.environ.get("IOS_DEVICE_NAME", "iPhone 17 Pro")
 IOS_PLATFORM_VERSION = os.environ.get("IOS_PLATFORM_VERSION", "18.0")
 IOS_BUNDLE_ID_SETTINGS = "com.apple.Preferences"
 

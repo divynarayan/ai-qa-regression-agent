@@ -659,3 +659,1201 @@ Traceback (most recent call last):
     raise TimeoutException(message, screen, stacktrace)
 selenium.common.exceptions.TimeoutException: Message: 
 
+2026-03-18 18:45:48,624 [INFO] iOS step 1: action=tap, target=Login
+2026-03-18 18:47:43,422 [ERROR] Step failed: Message: 
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 61, in _find_element_ios
+    return wait.until(_visible_predicate)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 250, in _execute_steps_ios
+    raise e
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 238, in _execute_steps_ios
+    el = _find_element_ios(driver, wait, target)
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 68, in _find_element_ios
+    return wait.until(_visible_predicate)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2026-03-18 18:56:09,435 [INFO] iOS step 1: action=tap, target=Login
+2026-03-18 20:41:29,838 [INFO] iOS step 1: action=tap, target=Login
+2026-03-18 20:44:26,439 [ERROR] Step failed: Message: 
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 265, in _execute_steps_ios
+    raise e
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 253, in _execute_steps_ios
+    el = _find_element_ios(driver, wait, target)
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 69, in _find_element_ios
+    return wait.until(_visible_predicate)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2026-03-18 21:04:03,402 [INFO] iOS step 1: action=tap, target=Más
+2026-03-18 21:04:04,096 [INFO] iOS step 2: action=input, target=
+2026-03-18 21:04:20,175 [INFO] iOS step 3: action=input, target=
+2026-03-18 21:04:37,099 [INFO] iOS step 4: action=tap, target=Entrar
+2026-03-18 21:04:38,197 [INFO] iOS step 5: action=verify_element, target=Home
+2026-03-18 21:06:39,106 [ERROR] Step failed: Message: 
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 287, in _execute_steps_ios
+    _find_element_ios(driver, wait, target)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 69, in _find_element_ios
+    return wait.until(_visible_predicate)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 293, in _execute_steps_ios
+    _find_element_ios(driver, wait, target)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 69, in _find_element_ios
+    return wait.until(_visible_predicate)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2026-03-18 21:10:39,073 [INFO] iOS step 1: action=tap, target=Más
+2026-03-18 21:10:39,817 [INFO] iOS step 2: action=input, target=
+2026-03-18 21:10:56,444 [INFO] iOS step 3: action=input, target=
+2026-03-18 21:11:13,847 [INFO] iOS step 4: action=tap, target=Entrar
+2026-03-18 21:11:15,442 [INFO] iOS step 5: action=verify_element, target=Home
+2026-03-18 21:13:16,695 [ERROR] Step failed: Message: 
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 287, in _execute_steps_ios
+    _find_element_ios(driver, wait, target)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 69, in _find_element_ios
+    return wait.until(_visible_predicate)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 293, in _execute_steps_ios
+    _find_element_ios(driver, wait, target)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 69, in _find_element_ios
+    return wait.until(_visible_predicate)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2026-03-19 15:29:32,329 [INFO] iOS step 1: action=tap, target=Más
+2026-03-19 15:29:33,816 [INFO] iOS step 2: action=input, target=
+2026-03-19 15:29:50,666 [INFO] iOS step 3: action=input, target=
+2026-03-19 15:30:08,103 [INFO] iOS step 4: action=tap, target=Entrar
+2026-03-19 15:30:10,596 [INFO] iOS step 5: action=verify_element, target=Home
+2026-03-19 15:32:11,478 [ERROR] Step failed: Message: 
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 287, in _execute_steps_ios
+    _find_element_ios(driver, wait, target)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 69, in _find_element_ios
+    return wait.until(_visible_predicate)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 293, in _execute_steps_ios
+    _find_element_ios(driver, wait, target)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 69, in _find_element_ios
+    return wait.until(_visible_predicate)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2026-03-19 15:45:37,202 [INFO] iOS step 1: action=tap, target=Más
+2026-03-19 15:45:38,125 [INFO] iOS step 2: action=input, target=
+2026-03-19 15:45:54,501 [INFO] iOS step 3: action=input, target=
+2026-03-19 15:46:11,814 [INFO] iOS step 4: action=tap, target=Entrar
+2026-03-19 15:46:13,485 [INFO] iOS step 5: action=verify_element, target=Home
+2026-03-19 15:48:15,289 [ERROR] Step failed: Message: 
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 287, in _execute_steps_ios
+    _find_element_ios(driver, wait, target)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 69, in _find_element_ios
+    return wait.until(_visible_predicate)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 293, in _execute_steps_ios
+    _find_element_ios(driver, wait, target)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 69, in _find_element_ios
+    return wait.until(_visible_predicate)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2026-03-19 16:13:19,908 [INFO] iOS step 1: action=tap, target=Más
+2026-03-19 16:13:21,546 [INFO] iOS step 2: action=tap, target=Entrar a mi cuenta
+2026-03-19 16:13:23,207 [INFO] iOS step 3: action=input, target=
+2026-03-19 16:13:27,270 [INFO] iOS step 4: action=input, target=
+2026-03-19 16:13:27,487 [ERROR] Step failed: Not enough input fields on iOS screen
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 287, in _execute_steps_ios
+    raise ValueError("Not enough input fields on iOS screen")
+ValueError: Not enough input fields on iOS screen
+2026-03-19 16:14:49,674 [ERROR] Message: Error executing adbExec. Original error: 'Command '/Users/divynarayan/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 1'; Command output: adb: device 'emulator-5554' not found
+
+Stacktrace:
+UnknownError: Error executing adbExec. Original error: 'Command '/Users/divynarayan/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 1'; Command output: adb: device 'emulator-5554' not found
+
+    at getResponseForW3CError (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.ts:1103:34)
+    at asyncHandler (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.ts:507:57)
+The above error is caused by
+Error: Error executing adbExec. Original error: 'Command '/Users/divynarayan/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 1'; Command output: adb: device 'emulator-5554' not found
+
+    at ChildProcess.<anonymous> (/Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/teen_process/lib/exec.ts:139:35)
+    at ChildProcess.emit (node:events:508:28)
+    at maybeClose (node:internal/child_process:1101:16)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:305:5)
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 535, in run_structured_test
+    driver = webdriver.Remote(command_executor=APPIUM_URL, options=options)
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/appium/webdriver/webdriver.py", line 251, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        command_executor=command_executor,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        client_config=client_config,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 271, in __init__
+    self.start_session(capabilities)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/appium/webdriver/webdriver.py", line 344, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, w3c_caps)
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: Error executing adbExec. Original error: 'Command '/Users/divynarayan/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 1'; Command output: adb: device 'emulator-5554' not found
+
+Stacktrace:
+UnknownError: Error executing adbExec. Original error: 'Command '/Users/divynarayan/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 1'; Command output: adb: device 'emulator-5554' not found
+
+    at getResponseForW3CError (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.ts:1103:34)
+    at asyncHandler (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.ts:507:57)
+The above error is caused by
+Error: Error executing adbExec. Original error: 'Command '/Users/divynarayan/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 1'; Command output: adb: device 'emulator-5554' not found
+
+    at ChildProcess.<anonymous> (/Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/teen_process/lib/exec.ts:139:35)
+    at ChildProcess.emit (node:events:508:28)
+    at maybeClose (node:internal/child_process:1101:16)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:305:5)
+2026-03-19 16:15:26,951 [INFO] iOS step 1: action=tap, target=Más
+2026-03-19 16:15:28,747 [INFO] iOS step 2: action=tap, target=Entrar a mi cuenta
+2026-03-19 16:15:30,409 [INFO] iOS step 3: action=input, target=
+2026-03-19 16:15:34,101 [INFO] iOS step 4: action=input, target=
+2026-03-19 16:15:34,266 [ERROR] Step failed: Not enough input fields on iOS screen
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 287, in _execute_steps_ios
+    raise ValueError("Not enough input fields on iOS screen")
+ValueError: Not enough input fields on iOS screen
+2026-03-19 17:42:29,127 [INFO] iOS step 1: action=tap, target=Más
+2026-03-19 17:42:31,022 [INFO] iOS step 2: action=tap, target=Entrar a mi cuenta
+2026-03-19 17:42:32,819 [INFO] iOS step 3: action=input, target=
+2026-03-19 17:42:41,306 [ERROR] Step failed: Message: The previously found element ""login_msisdn_text_field_input" TextField" is not present in the current view anymore. Make sure the application UI has the expected state. Original error: Error getting main window kAXErrorServerNotFound; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+ProxyRequestError: Request failed with status code 404
+    at JWProxy.proxy (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/node_modules/@appium/base-driver/lib/jsonwp-proxy/proxy.js:283:13)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at ProtocolConverter.proxySetValue (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/node_modules/@appium/base-driver/lib/jsonwp-proxy/protocol-converter.ts:242:14)
+    at ProtocolConverter.convertAndProxy (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/node_modules/@appium/base-driver/lib/jsonwp-proxy/protocol-converter.ts:101:16)
+    at JWProxy.proxyCommand (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/node_modules/@appium/base-driver/lib/jsonwp-proxy/proxy.js:317:12)
+    at JWProxy.command (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/node_modules/@appium/base-driver/lib/jsonwp-proxy/proxy.js:331:32)
+    at XCUITestDriver.proxyCommand (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/commands/proxy-helper.ts:95:13)
+    at XCUITestDriver.setValue (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/commands/element.ts:252:5)
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 299, in _execute_steps_ios
+    el.send_keys(ch)
+    ~~~~~~~~~~~~^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/appium/webdriver/webelement.py", line 129, in send_keys
+    self._execute(RemoteCommand.SEND_KEYS_TO_ELEMENT, {'text': ''.join(keys), 'value': keys})
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/appium/webdriver/errorhandler.py", line 125, in check_response
+    raise exception_class(msg=message, stacktrace=format_stacktrace(stacktrace))
+selenium.common.exceptions.StaleElementReferenceException: Message: The previously found element ""login_msisdn_text_field_input" TextField" is not present in the current view anymore. Make sure the application UI has the expected state. Original error: Error getting main window kAXErrorServerNotFound; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+ProxyRequestError: Request failed with status code 404
+    at JWProxy.proxy (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/node_modules/@appium/base-driver/lib/jsonwp-proxy/proxy.js:283:13)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at ProtocolConverter.proxySetValue (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/node_modules/@appium/base-driver/lib/jsonwp-proxy/protocol-converter.ts:242:14)
+    at ProtocolConverter.convertAndProxy (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/node_modules/@appium/base-driver/lib/jsonwp-proxy/protocol-converter.ts:101:16)
+    at JWProxy.proxyCommand (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/node_modules/@appium/base-driver/lib/jsonwp-proxy/proxy.js:317:12)
+    at JWProxy.command (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/node_modules/@appium/base-driver/lib/jsonwp-proxy/proxy.js:331:32)
+    at XCUITestDriver.proxyCommand (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/commands/proxy-helper.ts:95:13)
+    at XCUITestDriver.setValue (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/commands/element.ts:252:5)
+2026-03-19 17:43:39,357 [INFO] iOS step 1: action=tap, target=Más
+2026-03-19 17:43:41,037 [INFO] iOS step 2: action=tap, target=Entrar a mi cuenta
+2026-03-19 17:43:42,955 [INFO] iOS step 3: action=input, target=
+2026-03-19 17:43:50,300 [ERROR] Step failed: Message: The previously found element ""login_msisdn_text_field_input" TextField" is not present in the current view anymore. Make sure the application UI has the expected state. Original error: Error getting main window kAXErrorServerNotFound; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+ProxyRequestError: Request failed with status code 404
+    at JWProxy.proxy (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/node_modules/@appium/base-driver/lib/jsonwp-proxy/proxy.js:283:13)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at ProtocolConverter.proxySetValue (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/node_modules/@appium/base-driver/lib/jsonwp-proxy/protocol-converter.ts:242:14)
+    at ProtocolConverter.convertAndProxy (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/node_modules/@appium/base-driver/lib/jsonwp-proxy/protocol-converter.ts:101:16)
+    at JWProxy.proxyCommand (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/node_modules/@appium/base-driver/lib/jsonwp-proxy/proxy.js:317:12)
+    at JWProxy.command (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/node_modules/@appium/base-driver/lib/jsonwp-proxy/proxy.js:331:32)
+    at XCUITestDriver.proxyCommand (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/commands/proxy-helper.ts:95:13)
+    at XCUITestDriver.setValue (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/commands/element.ts:252:5)
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 299, in _execute_steps_ios
+    el.send_keys(ch)
+    ~~~~~~~~~~~~^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/appium/webdriver/webelement.py", line 129, in send_keys
+    self._execute(RemoteCommand.SEND_KEYS_TO_ELEMENT, {'text': ''.join(keys), 'value': keys})
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/appium/webdriver/errorhandler.py", line 125, in check_response
+    raise exception_class(msg=message, stacktrace=format_stacktrace(stacktrace))
+selenium.common.exceptions.StaleElementReferenceException: Message: The previously found element ""login_msisdn_text_field_input" TextField" is not present in the current view anymore. Make sure the application UI has the expected state. Original error: Error getting main window kAXErrorServerNotFound; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+ProxyRequestError: Request failed with status code 404
+    at JWProxy.proxy (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/node_modules/@appium/base-driver/lib/jsonwp-proxy/proxy.js:283:13)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at ProtocolConverter.proxySetValue (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/node_modules/@appium/base-driver/lib/jsonwp-proxy/protocol-converter.ts:242:14)
+    at ProtocolConverter.convertAndProxy (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/node_modules/@appium/base-driver/lib/jsonwp-proxy/protocol-converter.ts:101:16)
+    at JWProxy.proxyCommand (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/node_modules/@appium/base-driver/lib/jsonwp-proxy/proxy.js:317:12)
+    at JWProxy.command (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/node_modules/@appium/base-driver/lib/jsonwp-proxy/proxy.js:331:32)
+    at XCUITestDriver.proxyCommand (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/commands/proxy-helper.ts:95:13)
+    at XCUITestDriver.setValue (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/commands/element.ts:252:5)
+2026-03-19 17:50:45,817 [INFO] iOS step 1: action=tap, target=Más
+2026-03-19 17:50:47,440 [INFO] iOS step 2: action=tap, target=Entrar a mi cuenta
+2026-03-19 17:50:49,179 [INFO] iOS step 3: action=input, target=
+2026-03-19 17:50:56,502 [ERROR] Step failed: Message: The previously found element ""login_msisdn_text_field_input" TextField" is not present in the current view anymore. Make sure the application UI has the expected state. Original error: Error getting main window kAXErrorServerNotFound; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+ProxyRequestError: Request failed with status code 404
+    at JWProxy.proxy (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/node_modules/@appium/base-driver/lib/jsonwp-proxy/proxy.js:283:13)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at ProtocolConverter.proxySetValue (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/node_modules/@appium/base-driver/lib/jsonwp-proxy/protocol-converter.ts:242:14)
+    at ProtocolConverter.convertAndProxy (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/node_modules/@appium/base-driver/lib/jsonwp-proxy/protocol-converter.ts:101:16)
+    at JWProxy.proxyCommand (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/node_modules/@appium/base-driver/lib/jsonwp-proxy/proxy.js:317:12)
+    at JWProxy.command (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/node_modules/@appium/base-driver/lib/jsonwp-proxy/proxy.js:331:32)
+    at XCUITestDriver.proxyCommand (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/commands/proxy-helper.ts:95:13)
+    at XCUITestDriver.setValue (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/commands/element.ts:252:5)
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 299, in _execute_steps_ios
+    el.send_keys(ch)
+    ~~~~~~~~~~~~^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/appium/webdriver/webelement.py", line 129, in send_keys
+    self._execute(RemoteCommand.SEND_KEYS_TO_ELEMENT, {'text': ''.join(keys), 'value': keys})
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/appium/webdriver/errorhandler.py", line 125, in check_response
+    raise exception_class(msg=message, stacktrace=format_stacktrace(stacktrace))
+selenium.common.exceptions.StaleElementReferenceException: Message: The previously found element ""login_msisdn_text_field_input" TextField" is not present in the current view anymore. Make sure the application UI has the expected state. Original error: Error getting main window kAXErrorServerNotFound; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+ProxyRequestError: Request failed with status code 404
+    at JWProxy.proxy (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/node_modules/@appium/base-driver/lib/jsonwp-proxy/proxy.js:283:13)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at ProtocolConverter.proxySetValue (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/node_modules/@appium/base-driver/lib/jsonwp-proxy/protocol-converter.ts:242:14)
+    at ProtocolConverter.convertAndProxy (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/node_modules/@appium/base-driver/lib/jsonwp-proxy/protocol-converter.ts:101:16)
+    at JWProxy.proxyCommand (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/node_modules/@appium/base-driver/lib/jsonwp-proxy/proxy.js:317:12)
+    at JWProxy.command (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/node_modules/@appium/base-driver/lib/jsonwp-proxy/proxy.js:331:32)
+    at XCUITestDriver.proxyCommand (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/commands/proxy-helper.ts:95:13)
+    at XCUITestDriver.setValue (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/commands/element.ts:252:5)
+2026-03-21 11:57:04,838 [ERROR] Message: The simulator 8EAE66AC-0D70-4F37-A2E6-504D24E36816 has failed to finish booting after 120s. Original status: 
+Stacktrace:
+UnknownError: The simulator 8EAE66AC-0D70-4F37-A2E6-504D24E36816 has failed to finish booting after 120s. Original status: 
+    at getResponseForW3CError (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.ts:1103:34)
+    at asyncHandler (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.ts:507:57)
+The above error is caused by
+Error: The simulator 8EAE66AC-0D70-4F37-A2E6-504D24E36816 has failed to finish booting after 120s. Original status: 
+    at Simctl.startBootMonitor (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/node_modules/node-simctl/lib/subcommands/bootstatus.ts:103:13)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at SimulatorXcode15.waitForBoot (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/node_modules/appium-ios-simulator/lib/simulator-xcode-14.ts:337:5)
+    at SimulatorXcode15.run (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/node_modules/appium-ios-simulator/lib/simulator-xcode-14.ts:494:7)
+    at XCUITestDriver.startSim (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/driver.ts:1460:5)
+    at XCUITestDriver.initSimulator (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/driver.ts:1052:5)
+    at XCUITestDriver.start (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/driver.ts:930:7)
+    at XCUITestDriver.createSession (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/driver.ts:364:7)
+    at AppiumDriver.createSession (/Users/divynarayan/.npm-global/lib/node_modules/appium/lib/appium.js:360:35)
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 520, in run_structured_test
+    driver = webdriver.Remote(command_executor=APPIUM_URL, options=options)
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/appium/webdriver/webdriver.py", line 251, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        command_executor=command_executor,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        client_config=client_config,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 271, in __init__
+    self.start_session(capabilities)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/appium/webdriver/webdriver.py", line 344, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, w3c_caps)
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: The simulator 8EAE66AC-0D70-4F37-A2E6-504D24E36816 has failed to finish booting after 120s. Original status: 
+Stacktrace:
+UnknownError: The simulator 8EAE66AC-0D70-4F37-A2E6-504D24E36816 has failed to finish booting after 120s. Original status: 
+    at getResponseForW3CError (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.ts:1103:34)
+    at asyncHandler (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.ts:507:57)
+The above error is caused by
+Error: The simulator 8EAE66AC-0D70-4F37-A2E6-504D24E36816 has failed to finish booting after 120s. Original status: 
+    at Simctl.startBootMonitor (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/node_modules/node-simctl/lib/subcommands/bootstatus.ts:103:13)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at SimulatorXcode15.waitForBoot (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/node_modules/appium-ios-simulator/lib/simulator-xcode-14.ts:337:5)
+    at SimulatorXcode15.run (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/node_modules/appium-ios-simulator/lib/simulator-xcode-14.ts:494:7)
+    at XCUITestDriver.startSim (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/driver.ts:1460:5)
+    at XCUITestDriver.initSimulator (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/driver.ts:1052:5)
+    at XCUITestDriver.start (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/driver.ts:930:7)
+    at XCUITestDriver.createSession (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/driver.ts:364:7)
+    at AppiumDriver.createSession (/Users/divynarayan/.npm-global/lib/node_modules/appium/lib/appium.js:360:35)
+2026-03-21 12:01:46,810 [INFO] iOS step 1: action=tap, target=Más
+2026-03-21 12:01:48,689 [INFO] iOS step 2: action=tap, target=Entrar a mi cuenta
+2026-03-21 12:01:50,264 [INFO] iOS step 3: action=input, target=
+2026-03-21 12:01:59,833 [INFO] iOS step 4: action=input, target=
+2026-03-21 12:02:09,572 [INFO] iOS step 5: action=tap, target=Entrar
+2026-03-22 00:57:26,033 [INFO] iOS step 1: action=tap, target=Más
+2026-03-22 00:57:27,678 [INFO] iOS step 2: action=tap, target=Entrar a mi cuenta
+2026-03-22 00:57:29,389 [INFO] iOS step 3: action=input, target=
+2026-03-22 00:57:38,086 [ERROR] Step failed: Input failed for field: Teléfono
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 507, in _execute_steps_ios
+    _perform_input_ios(driver, wait, step)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 402, in _perform_input_ios
+    raise Exception(f"Input failed for field: {field}")
+Exception: Input failed for field: Teléfono
+2026-03-22 12:13:31,926 [INFO] iOS step 1: action=tap, target=Más
+2026-03-22 12:13:33,598 [INFO] iOS step 2: action=input, target=
+2026-03-22 12:13:57,186 [ERROR] Step failed: Input validation failed for Teléfono
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 653, in _execute_steps_ios
+    _perform_input_ios(driver, wait, step)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 531, in _perform_input_ios
+    raise Exception(f"Input validation failed for {field}")
+Exception: Input validation failed for Teléfono
+2026-03-22 12:14:00,115 [INFO] iOS step 1: action=tap, target=Más
+2026-03-22 12:14:02,286 [INFO] iOS step 2: action=input, target=
+2026-03-22 12:14:24,880 [ERROR] Step failed: Input validation failed for Teléfono
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 653, in _execute_steps_ios
+    _perform_input_ios(driver, wait, step)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 531, in _perform_input_ios
+    raise Exception(f"Input validation failed for {field}")
+Exception: Input validation failed for Teléfono
+2026-03-22 12:27:00,217 [INFO] iOS step 1: action=tap, target=Más
+2026-03-22 12:27:01,920 [INFO] iOS step 2: action=input, target=
+2026-03-22 12:27:10,906 [INFO] iOS step 3: action=input, target=
+2026-03-22 12:27:19,915 [INFO] iOS step 4: action=tap, target=Entrar
+2026-03-22 12:27:47,950 [INFO] iOS step 5: action=verify_element, target=Inicio
+2026-03-22 12:28:50,664 [ERROR] Step failed: Element 'Inicio' not visible
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 712, in _execute_steps_ios
+    _verify_element_strict(driver, wait, target)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 284, in _verify_element_strict
+    raise Exception(f"Element '{t}' not visible")
+Exception: Element 'Inicio' not visible
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 718, in _execute_steps_ios
+    _verify_element_strict(driver, wait, target)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 284, in _verify_element_strict
+    raise Exception(f"Element '{t}' not visible")
+Exception: Element 'Inicio' not visible
+2026-03-22 12:29:13,827 [INFO] iOS step 1: action=tap, target=Más
+2026-03-22 12:29:15,478 [INFO] iOS step 2: action=input, target=
+2026-03-22 12:29:15,672 [ERROR] Step failed: No visible input fields
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 704, in _execute_steps_ios
+    _perform_input_ios(driver, wait, step, bug_description)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 616, in _perform_input_ios
+    _perform_input_by_index(driver, wait, step, "ios", bug_description)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 586, in _perform_input_by_index
+    raise Exception("No visible input fields")
+Exception: No visible input fields
+2026-03-22 12:30:44,473 [INFO] iOS step 1: action=tap, target=Más
+2026-03-22 12:30:46,225 [INFO] iOS step 2: action=input, target=
+2026-03-22 12:30:55,081 [INFO] iOS step 3: action=input, target=
+2026-03-22 12:31:04,018 [INFO] iOS step 4: action=tap, target=Entrar
+2026-03-22 12:31:31,659 [INFO] iOS step 5: action=verify_element, target=Inicio
+2026-03-22 12:32:31,887 [ERROR] Step failed: Element 'Inicio' not visible
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 712, in _execute_steps_ios
+    _verify_element_strict(driver, wait, target)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 284, in _verify_element_strict
+    raise Exception(f"Element '{t}' not visible")
+Exception: Element 'Inicio' not visible
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 718, in _execute_steps_ios
+    _verify_element_strict(driver, wait, target)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 284, in _verify_element_strict
+    raise Exception(f"Element '{t}' not visible")
+Exception: Element 'Inicio' not visible
+2026-03-22 12:32:34,468 [INFO] iOS step 1: action=tap, target=Más
+2026-03-22 12:32:36,129 [INFO] iOS step 2: action=input, target=
+2026-03-22 12:32:45,274 [INFO] iOS step 3: action=input, target=
+2026-03-22 12:32:54,393 [INFO] iOS step 4: action=tap, target=Entrar
+2026-03-22 12:33:22,257 [INFO] iOS step 5: action=verify_element, target=Inicio
+2026-03-22 12:34:14,300 [ERROR] Step failed: Element 'Inicio' not visible
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 712, in _execute_steps_ios
+    _verify_element_strict(driver, wait, target)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 284, in _verify_element_strict
+    raise Exception(f"Element '{t}' not visible")
+Exception: Element 'Inicio' not visible
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 718, in _execute_steps_ios
+    _verify_element_strict(driver, wait, target)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 284, in _verify_element_strict
+    raise Exception(f"Element '{t}' not visible")
+Exception: Element 'Inicio' not visible
+2026-03-22 12:35:07,311 [INFO] iOS step 1: action=tap, target=Más
+2026-03-22 12:35:08,897 [INFO] iOS step 2: action=input, target=
+2026-03-22 12:35:09,018 [ERROR] Step failed: No visible input fields
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 704, in _execute_steps_ios
+    _perform_input_ios(driver, wait, step, bug_description)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 616, in _perform_input_ios
+    _perform_input_by_index(driver, wait, step, "ios", bug_description)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 586, in _perform_input_by_index
+    raise Exception("No visible input fields")
+Exception: No visible input fields
+2026-03-22 12:35:31,910 [INFO] iOS step 1: action=tap, target=Más
+2026-03-22 12:35:33,491 [INFO] iOS step 2: action=input, target=
+2026-03-22 12:35:33,624 [ERROR] Step failed: No visible input fields
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 704, in _execute_steps_ios
+    _perform_input_ios(driver, wait, step, bug_description)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 616, in _perform_input_ios
+    _perform_input_by_index(driver, wait, step, "ios", bug_description)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 586, in _perform_input_by_index
+    raise Exception("No visible input fields")
+Exception: No visible input fields
+2026-03-22 12:36:12,995 [INFO] iOS step 1: action=tap, target=Más
+2026-03-22 12:36:14,575 [INFO] iOS step 2: action=input, target=
+2026-03-22 12:36:14,694 [ERROR] Step failed: No visible input fields
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 704, in _execute_steps_ios
+    _perform_input_ios(driver, wait, step, bug_description)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 616, in _perform_input_ios
+    _perform_input_by_index(driver, wait, step, "ios", bug_description)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 586, in _perform_input_by_index
+    raise Exception("No visible input fields")
+Exception: No visible input fields
+2026-03-22 12:36:17,039 [INFO] iOS step 1: action=tap, target=Más
+2026-03-22 12:36:18,668 [INFO] iOS step 2: action=input, target=
+2026-03-22 12:36:27,388 [INFO] iOS step 3: action=input, target=
+2026-03-22 12:36:36,123 [INFO] iOS step 4: action=tap, target=Entrar
+2026-03-22 12:36:52,451 [INFO] iOS step 5: action=verify_element, target=Inicio
+2026-03-22 12:37:30,037 [ERROR] Step failed: Element 'Inicio' not visible
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 712, in _execute_steps_ios
+    _verify_element_strict(driver, wait, target)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 284, in _verify_element_strict
+    raise Exception(f"Element '{t}' not visible")
+Exception: Element 'Inicio' not visible
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 718, in _execute_steps_ios
+    _verify_element_strict(driver, wait, target)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 284, in _verify_element_strict
+    raise Exception(f"Element '{t}' not visible")
+Exception: Element 'Inicio' not visible
+2026-03-22 12:40:47,152 [INFO] iOS step 1: action=tap, target=Más
+2026-03-22 12:40:48,964 [INFO] iOS step 2: action=input, target=
+2026-03-22 12:40:58,197 [INFO] iOS step 3: action=input, target=
+2026-03-22 12:41:07,346 [INFO] iOS step 4: action=tap, target=Entrar
+2026-03-22 12:56:33,278 [INFO] iOS step 5: action=verify_element, target=Inicio
+2026-03-22 12:56:39,657 [ERROR] Step failed: Element 'Inicio' not visible
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 712, in _execute_steps_ios
+    _verify_element_strict(driver, wait, target)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 284, in _verify_element_strict
+    raise Exception(f"Element '{t}' not visible")
+Exception: Element 'Inicio' not visible
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 718, in _execute_steps_ios
+    _verify_element_strict(driver, wait, target)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 284, in _verify_element_strict
+    raise Exception(f"Element '{t}' not visible")
+Exception: Element 'Inicio' not visible
+2026-03-22 12:56:51,752 [INFO] iOS step 1: action=tap, target=Más
+2026-03-22 12:56:51,787 [ERROR] Step failed: Message: A session is either terminated or not started; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+NoSuchDriverError: A session is either terminated or not started
+    at asyncHandler (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.ts:329:15)
+    at /Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.ts:524:15
+    at Layer.handleRequest (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/router/lib/layer.js:152:17)
+    at /Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/router/index.js:295:15
+    at param (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/router/index.js:600:14)
+    at param (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/router/index.js:610:14)
+    at processParams (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/router/index.js:664:3)
+    at next (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/router/index.js:291:5)
+    at logger (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/morgan/index.js:144:5)
+    at Layer.handleRequest (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/router/lib/layer.js:152:17)
+    at trimPrefix (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/router/index.js:342:13)
+    at /Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/router/index.js:297:9
+    at processParams (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/router/index.js:582:12)
+    at next (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/router/index.js:291:5)
+    at /Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/body-parser/lib/read.js:172:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+    at invokeCallback (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/raw-body/index.js:238:16)
+    at done (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:508:28)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at processTicksAndRejections (node:internal/process/task_queues:89:21)
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 418, in _find_element_ios
+    return wait.until(_visible_predicate)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 112, in until
+    value = method(self._driver)
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 407, in _visible_predicate
+    els = _driver.find_elements(*pred)
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 847, in find_elements
+    return self.execute(Command.FIND_ELEMENTS, {"using": by, "value": value})["value"] or []
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/appium/webdriver/errorhandler.py", line 125, in check_response
+    raise exception_class(msg=message, stacktrace=format_stacktrace(stacktrace))
+selenium.common.exceptions.InvalidSessionIdException: Message: A session is either terminated or not started; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+NoSuchDriverError: A session is either terminated or not started
+    at asyncHandler (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.ts:329:15)
+    at /Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.ts:524:15
+    at Layer.handleRequest (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/router/lib/layer.js:152:17)
+    at /Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/router/index.js:295:15
+    at param (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/router/index.js:600:14)
+    at param (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/router/index.js:610:14)
+    at processParams (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/router/index.js:664:3)
+    at next (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/router/index.js:291:5)
+    at logger (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/morgan/index.js:144:5)
+    at Layer.handleRequest (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/router/lib/layer.js:152:17)
+    at trimPrefix (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/router/index.js:342:13)
+    at /Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/router/index.js:297:9
+    at processParams (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/router/index.js:582:12)
+    at next (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/router/index.js:291:5)
+    at /Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/body-parser/lib/read.js:172:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+    at invokeCallback (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/raw-body/index.js:238:16)
+    at done (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:508:28)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at processTicksAndRejections (node:internal/process/task_queues:89:21)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 702, in _execute_steps_ios
+    raise e
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 691, in _execute_steps_ios
+    _tap_ios(driver, wait, target)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 322, in _tap_ios
+    el = _find_element_ios(driver, wait, target)
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 424, in _find_element_ios
+    return wait.until(_visible_predicate)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 112, in until
+    value = method(self._driver)
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 407, in _visible_predicate
+    els = _driver.find_elements(*pred)
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 847, in find_elements
+    return self.execute(Command.FIND_ELEMENTS, {"using": by, "value": value})["value"] or []
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/appium/webdriver/errorhandler.py", line 125, in check_response
+    raise exception_class(msg=message, stacktrace=format_stacktrace(stacktrace))
+selenium.common.exceptions.InvalidSessionIdException: Message: A session is either terminated or not started; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+NoSuchDriverError: A session is either terminated or not started
+    at asyncHandler (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.ts:329:15)
+    at /Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.ts:524:15
+    at Layer.handleRequest (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/router/lib/layer.js:152:17)
+    at /Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/router/index.js:295:15
+    at param (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/router/index.js:600:14)
+    at param (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/router/index.js:610:14)
+    at processParams (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/router/index.js:664:3)
+    at next (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/router/index.js:291:5)
+    at logger (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/morgan/index.js:144:5)
+    at Layer.handleRequest (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/router/lib/layer.js:152:17)
+    at trimPrefix (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/router/index.js:342:13)
+    at /Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/router/index.js:297:9
+    at processParams (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/router/index.js:582:12)
+    at next (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/router/index.js:291:5)
+    at /Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/body-parser/lib/read.js:172:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+    at invokeCallback (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/raw-body/index.js:238:16)
+    at done (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:508:28)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at processTicksAndRejections (node:internal/process/task_queues:89:21)
+2026-03-22 21:21:58,989 [INFO] iOS step 1: action=tap, target=Más
+2026-03-22 21:22:01,213 [INFO] iOS step 2: action=input, target=
+2026-03-22 21:22:11,275 [INFO] iOS step 3: action=input, target=
+2026-03-22 21:22:20,562 [INFO] iOS step 4: action=tap, target=Entrar
+2026-03-22 21:22:48,665 [INFO] iOS step 5: action=verify_element, target=Inicio
+2026-03-22 21:23:32,864 [ERROR] Step failed: Element 'Inicio' not visible
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 712, in _execute_steps_ios
+    _verify_element_strict(driver, wait, target)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 284, in _verify_element_strict
+    raise Exception(f"Element '{t}' not visible")
+Exception: Element 'Inicio' not visible
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 718, in _execute_steps_ios
+    _verify_element_strict(driver, wait, target)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 284, in _verify_element_strict
+    raise Exception(f"Element '{t}' not visible")
+Exception: Element 'Inicio' not visible
+2026-03-22 21:23:45,439 [INFO] iOS step 1: action=tap, target=Más
+2026-03-22 21:24:06,414 [ERROR] Step failed: Message: 
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 418, in _find_element_ios
+    return wait.until(_visible_predicate)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 702, in _execute_steps_ios
+    raise e
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 691, in _execute_steps_ios
+    _tap_ios(driver, wait, target)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 322, in _tap_ios
+    el = _find_element_ios(driver, wait, target)
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 424, in _find_element_ios
+    return wait.until(_visible_predicate)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2026-03-22 21:42:33,194 [INFO] iOS step 1: action=tap, target=Más
+2026-03-22 21:42:35,169 [INFO] iOS step 2: action=input, target=
+2026-03-22 21:42:44,659 [INFO] iOS step 3: action=input, target=
+2026-03-22 21:42:54,059 [INFO] iOS step 4: action=tap, target=Entrar
+2026-03-22 21:43:22,278 [INFO] iOS step 5: action=verify_element, target=Inicio
+2026-03-22 21:44:11,870 [ERROR] Step failed: Element 'Inicio' not visible
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 712, in _execute_steps_ios
+    _verify_element_strict(driver, wait, target)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 284, in _verify_element_strict
+    raise Exception(f"Element '{t}' not visible")
+Exception: Element 'Inicio' not visible
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 718, in _execute_steps_ios
+    _verify_element_strict(driver, wait, target)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 284, in _verify_element_strict
+    raise Exception(f"Element '{t}' not visible")
+Exception: Element 'Inicio' not visible
+2026-03-22 21:44:24,841 [INFO] iOS step 1: action=tap, target=Más
+2026-03-22 21:44:46,387 [ERROR] Step failed: Message: 
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 418, in _find_element_ios
+    return wait.until(_visible_predicate)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 702, in _execute_steps_ios
+    raise e
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 691, in _execute_steps_ios
+    _tap_ios(driver, wait, target)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 322, in _tap_ios
+    el = _find_element_ios(driver, wait, target)
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 424, in _find_element_ios
+    return wait.until(_visible_predicate)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2026-03-23 00:58:39,897 [INFO] iOS step 1: action=tap, target=Más
+2026-03-23 00:58:42,385 [INFO] iOS step 2: action=input, target=
+2026-03-23 00:58:54,104 [INFO] iOS step 3: action=input, target=
+2026-03-23 00:59:03,804 [INFO] iOS step 4: action=tap, target=Entrar
+2026-03-23 00:59:31,807 [INFO] iOS step 5: action=verify_element, target=Inicio
+2026-03-23 01:00:33,832 [ERROR] Step failed: Element 'Inicio' not visible
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 712, in _execute_steps_ios
+    _verify_element_strict(driver, wait, target)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 284, in _verify_element_strict
+    raise Exception(f"Element '{t}' not visible")
+Exception: Element 'Inicio' not visible
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 718, in _execute_steps_ios
+    _verify_element_strict(driver, wait, target)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 284, in _verify_element_strict
+    raise Exception(f"Element '{t}' not visible")
+Exception: Element 'Inicio' not visible
+2026-03-23 01:00:43,756 [INFO] iOS step 1: action=tap, target=Más
+2026-03-23 01:01:04,944 [ERROR] Step failed: Message: 
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 418, in _find_element_ios
+    return wait.until(_visible_predicate)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 702, in _execute_steps_ios
+    raise e
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 691, in _execute_steps_ios
+    _tap_ios(driver, wait, target)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 322, in _tap_ios
+    el = _find_element_ios(driver, wait, target)
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 424, in _find_element_ios
+    return wait.until(_visible_predicate)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2026-03-23 01:07:33,796 [INFO] iOS step 1: action=tap, target=Más
+2026-03-23 01:07:35,529 [INFO] iOS step 2: action=input, target=
+2026-03-23 01:07:44,762 [INFO] iOS step 3: action=input, target=
+2026-03-23 01:07:54,241 [INFO] iOS step 4: action=tap, target=Entrar
+2026-03-23 01:08:22,819 [INFO] iOS step 5: action=verify_element, target=Inicio
+2026-03-23 01:09:02,126 [ERROR] Message: Could not find a connected Android device in 20000ms
+Stacktrace:
+UnknownError: Could not find a connected Android device in 20000ms
+    at getResponseForW3CError (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.ts:1103:34)
+    at asyncHandler (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.ts:507:57)
+The above error is caused by
+Error: Could not find a connected Android device in 20000ms
+    at ADB.getDevicesWithRetry (/Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/lib/tools/system-calls.ts:330:13)
+    at AndroidUiautomator2Driver.getDeviceInfoFromCaps (/Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/device/common.ts:38:21)
+    at AndroidUiautomator2Driver.createSession (/Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/lib/driver.ts:346:30)
+    at AppiumDriver.createSession (/Users/divynarayan/.npm-global/lib/node_modules/appium/lib/appium.js:360:35)
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 941, in run_structured_test
+    driver = webdriver.Remote(command_executor=APPIUM_URL, options=options)
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/appium/webdriver/webdriver.py", line 251, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        command_executor=command_executor,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        client_config=client_config,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 271, in __init__
+    self.start_session(capabilities)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/appium/webdriver/webdriver.py", line 344, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, w3c_caps)
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: Could not find a connected Android device in 20000ms
+Stacktrace:
+UnknownError: Could not find a connected Android device in 20000ms
+    at getResponseForW3CError (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.ts:1103:34)
+    at asyncHandler (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.ts:507:57)
+The above error is caused by
+Error: Could not find a connected Android device in 20000ms
+    at ADB.getDevicesWithRetry (/Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/lib/tools/system-calls.ts:330:13)
+    at AndroidUiautomator2Driver.getDeviceInfoFromCaps (/Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/device/common.ts:38:21)
+    at AndroidUiautomator2Driver.createSession (/Users/divynarayan/.appium/node_modules/appium-uiautomator2-driver/lib/driver.ts:346:30)
+    at AppiumDriver.createSession (/Users/divynarayan/.npm-global/lib/node_modules/appium/lib/appium.js:360:35)
+2026-03-23 01:09:07,599 [ERROR] Step failed: Element 'Inicio' not visible
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 712, in _execute_steps_ios
+    _verify_element_strict(driver, wait, target)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 284, in _verify_element_strict
+    raise Exception(f"Element '{t}' not visible")
+Exception: Element 'Inicio' not visible
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 718, in _execute_steps_ios
+    _verify_element_strict(driver, wait, target)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 284, in _verify_element_strict
+    raise Exception(f"Element '{t}' not visible")
+Exception: Element 'Inicio' not visible
+2026-03-23 01:09:40,329 [INFO] iOS step 1: action=tap, target=Más
+2026-03-23 01:10:01,381 [ERROR] Step failed: Message: 
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 418, in _find_element_ios
+    return wait.until(_visible_predicate)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 702, in _execute_steps_ios
+    raise e
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 691, in _execute_steps_ios
+    _tap_ios(driver, wait, target)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 322, in _tap_ios
+    el = _find_element_ios(driver, wait, target)
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 424, in _find_element_ios
+    return wait.until(_visible_predicate)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2026-03-24 12:07:26,523 [ERROR] Message: The simulator 5DD0B51F-8E2D-40ED-B872-199327943207 has failed to finish booting after 120s. Original status: 
+Stacktrace:
+UnknownError: The simulator 5DD0B51F-8E2D-40ED-B872-199327943207 has failed to finish booting after 120s. Original status: 
+    at getResponseForW3CError (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.ts:1103:34)
+    at asyncHandler (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.ts:507:57)
+The above error is caused by
+Error: The simulator 5DD0B51F-8E2D-40ED-B872-199327943207 has failed to finish booting after 120s. Original status: 
+    at Simctl.startBootMonitor (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/node_modules/node-simctl/lib/subcommands/bootstatus.ts:103:13)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at SimulatorXcode15.waitForBoot (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/node_modules/appium-ios-simulator/lib/simulator-xcode-14.ts:337:5)
+    at SimulatorXcode15.run (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/node_modules/appium-ios-simulator/lib/simulator-xcode-14.ts:494:7)
+    at XCUITestDriver.startSim (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/driver.ts:1460:5)
+    at XCUITestDriver.initSimulator (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/driver.ts:1052:5)
+    at XCUITestDriver.start (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/driver.ts:930:7)
+    at XCUITestDriver.createSession (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/driver.ts:364:7)
+    at AppiumDriver.createSession (/Users/divynarayan/.npm-global/lib/node_modules/appium/lib/appium.js:360:35)
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 918, in run_structured_test
+    driver = webdriver.Remote(command_executor=APPIUM_URL, options=options)
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/appium/webdriver/webdriver.py", line 251, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        command_executor=command_executor,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        client_config=client_config,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 271, in __init__
+    self.start_session(capabilities)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/appium/webdriver/webdriver.py", line 344, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, w3c_caps)
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: The simulator 5DD0B51F-8E2D-40ED-B872-199327943207 has failed to finish booting after 120s. Original status: 
+Stacktrace:
+UnknownError: The simulator 5DD0B51F-8E2D-40ED-B872-199327943207 has failed to finish booting after 120s. Original status: 
+    at getResponseForW3CError (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.ts:1103:34)
+    at asyncHandler (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.ts:507:57)
+The above error is caused by
+Error: The simulator 5DD0B51F-8E2D-40ED-B872-199327943207 has failed to finish booting after 120s. Original status: 
+    at Simctl.startBootMonitor (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/node_modules/node-simctl/lib/subcommands/bootstatus.ts:103:13)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at SimulatorXcode15.waitForBoot (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/node_modules/appium-ios-simulator/lib/simulator-xcode-14.ts:337:5)
+    at SimulatorXcode15.run (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/node_modules/appium-ios-simulator/lib/simulator-xcode-14.ts:494:7)
+    at XCUITestDriver.startSim (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/driver.ts:1460:5)
+    at XCUITestDriver.initSimulator (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/driver.ts:1052:5)
+    at XCUITestDriver.start (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/driver.ts:930:7)
+    at XCUITestDriver.createSession (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/driver.ts:364:7)
+    at AppiumDriver.createSession (/Users/divynarayan/.npm-global/lib/node_modules/appium/lib/appium.js:360:35)
+2026-03-24 13:05:11,525 [INFO] iOS step 1: action=tap, target=Más
+2026-03-24 13:05:13,339 [INFO] iOS step 2: action=input, target=
+2026-03-24 13:05:22,208 [INFO] iOS step 3: action=input, target=
+2026-03-24 13:05:31,064 [INFO] iOS step 4: action=tap, target=Entrar
+2026-03-24 13:05:58,673 [INFO] iOS step 5: action=verify_element, target=Inicio
+2026-03-24 13:06:59,077 [ERROR] Step failed: Element 'Inicio' not visible
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 712, in _execute_steps_ios
+    _verify_element_strict(driver, wait, target)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 284, in _verify_element_strict
+    raise Exception(f"Element '{t}' not visible")
+Exception: Element 'Inicio' not visible
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 718, in _execute_steps_ios
+    _verify_element_strict(driver, wait, target)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 284, in _verify_element_strict
+    raise Exception(f"Element '{t}' not visible")
+Exception: Element 'Inicio' not visible
+2026-03-24 13:07:01,735 [INFO] iOS step 1: action=tap, target=Más
+2026-03-24 13:07:03,480 [INFO] iOS step 2: action=input, target=
+2026-03-24 13:07:12,771 [INFO] iOS step 3: action=input, target=
+2026-03-24 13:07:22,325 [INFO] iOS step 4: action=tap, target=Entrar
+2026-03-24 13:07:49,942 [INFO] iOS step 5: action=verify_element, target=Inicio
+2026-03-24 13:08:50,865 [ERROR] Step failed: Element 'Inicio' not visible
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 712, in _execute_steps_ios
+    _verify_element_strict(driver, wait, target)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 284, in _verify_element_strict
+    raise Exception(f"Element '{t}' not visible")
+Exception: Element 'Inicio' not visible
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 718, in _execute_steps_ios
+    _verify_element_strict(driver, wait, target)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 284, in _verify_element_strict
+    raise Exception(f"Element '{t}' not visible")
+Exception: Element 'Inicio' not visible
+2026-03-30 16:12:41,592 [INFO] iOS step 1: action=tap, target=Más
+2026-03-30 16:12:43,484 [INFO] iOS step 2: action=input, target=
+2026-03-30 16:12:52,827 [INFO] iOS step 3: action=input, target=
+2026-03-30 16:13:01,673 [INFO] iOS step 4: action=tap, target=Entrar
+2026-03-30 16:13:29,790 [INFO] iOS step 5: action=verify_element, target=Inicio
+2026-03-30 16:16:49,561 [INFO] iOS step 1: action=tap, target=Más
+2026-03-30 16:16:51,520 [INFO] iOS step 2: action=input, target=
+2026-03-30 16:16:52,108 [ERROR] Step failed: No visible input fields
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 807, in _execute_steps_ios
+    _perform_input_ios(driver, wait, step, bug_description)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 719, in _perform_input_ios
+    _perform_input_by_index(driver, wait, step, "ios", bug_description)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 689, in _perform_input_by_index
+    raise Exception("No visible input fields")
+Exception: No visible input fields
+2026-03-30 16:17:14,781 [INFO] iOS step 1: action=tap, target=Más
+2026-03-30 16:17:16,752 [INFO] iOS step 2: action=input, target=
+2026-03-30 16:17:17,091 [ERROR] Step failed: No visible input fields
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 807, in _execute_steps_ios
+    _perform_input_ios(driver, wait, step, bug_description)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 719, in _perform_input_ios
+    _perform_input_by_index(driver, wait, step, "ios", bug_description)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 689, in _perform_input_by_index
+    raise Exception("No visible input fields")
+Exception: No visible input fields
+2026-03-30 16:24:31,259 [INFO] iOS step 1: action=tap, target=Más
+2026-03-30 16:24:33,225 [INFO] iOS step 2: action=input, target=
+2026-03-30 16:24:33,585 [ERROR] Step failed: No visible input fields
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 852, in _execute_steps_ios
+    _perform_input_ios(driver, wait, step, bug_description)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 764, in _perform_input_ios
+    _perform_input_by_index(driver, wait, step, "ios", bug_description)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 734, in _perform_input_by_index
+    raise Exception("No visible input fields")
+Exception: No visible input fields
+2026-03-30 16:24:56,524 [INFO] iOS step 1: action=tap, target=Más
+2026-03-30 16:24:59,760 [INFO] iOS step 2: action=input, target=
+2026-03-30 16:25:00,138 [ERROR] Step failed: No visible input fields
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 852, in _execute_steps_ios
+    _perform_input_ios(driver, wait, step, bug_description)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 764, in _perform_input_ios
+    _perform_input_by_index(driver, wait, step, "ios", bug_description)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 734, in _perform_input_by_index
+    raise Exception("No visible input fields")
+Exception: No visible input fields
+2026-03-30 16:43:34,289 [ERROR] Message: App with bundle identifier 'com.cwp.app' unknown
+Stacktrace:
+UnknownError: App with bundle identifier 'com.cwp.app' unknown
+    at getResponseForW3CError (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.ts:1103:34)
+    at asyncHandler (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.ts:507:57)
+The above error is caused by
+Error: App with bundle identifier 'com.cwp.app' unknown
+    at Object.errorWithException (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/support/lib/logging.js:41:45)
+    at XCUITestDriver.start (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/driver.ts:952:22)
+    at XCUITestDriver.createSession (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/driver.ts:364:7)
+    at AppiumDriver.createSession (/Users/divynarayan/.npm-global/lib/node_modules/appium/lib/appium.js:360:35)
+Traceback (most recent call last):
+  File "/Users/divynarayan/ai-regression-agent/automation/executor.py", line 1167, in run_structured_test
+    driver = webdriver.Remote(command_executor=APPIUM_URL, options=options)
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/appium/webdriver/webdriver.py", line 251, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        command_executor=command_executor,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        client_config=client_config,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 271, in __init__
+    self.start_session(capabilities)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/appium/webdriver/webdriver.py", line 344, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, w3c_caps)
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/divynarayan/ai-regression-agent/venv/lib/python3.14/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: App with bundle identifier 'com.cwp.app' unknown
+Stacktrace:
+UnknownError: App with bundle identifier 'com.cwp.app' unknown
+    at getResponseForW3CError (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.ts:1103:34)
+    at asyncHandler (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.ts:507:57)
+The above error is caused by
+Error: App with bundle identifier 'com.cwp.app' unknown
+    at Object.errorWithException (/Users/divynarayan/.npm-global/lib/node_modules/appium/node_modules/@appium/support/lib/logging.js:41:45)
+    at XCUITestDriver.start (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/driver.ts:952:22)
+    at XCUITestDriver.createSession (/Users/divynarayan/.appium/node_modules/appium-xcuitest-driver/lib/driver.ts:364:7)
+    at AppiumDriver.createSession (/Users/divynarayan/.npm-global/lib/node_modules/appium/lib/appium.js:360:35)
+2026-03-30 16:47:02,181 [INFO] iOS step 1: action=tap, target=Entrar a mi cuenta
+2026-03-30 16:47:19,711 [INFO] iOS step 2: action=input, target=
+2026-03-30 16:47:29,001 [INFO] iOS step 3: action=input, target=
+2026-03-30 16:47:38,289 [INFO] iOS step 4: action=tap, target=Entrar
+2026-03-30 16:48:17,075 [INFO] iOS step 5: action=verify_element, target=Inicio

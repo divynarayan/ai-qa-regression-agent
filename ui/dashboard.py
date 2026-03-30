@@ -4,8 +4,10 @@ import subprocess
 import sys
 from pathlib import Path
 import streamlit as st
+import io
 
 from ai_engine.ollama_helper import generate_yaml_from_ai, chat_with_ai
+from ai_engine.pdf_parser import extract_text_from_pdf
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 APPIUM_URL = "http://127.0.0.1:4723"
@@ -81,16 +83,36 @@ def main():
     if figma:
         st.image(figma)
 
+    # ---------------- FIGMA PDF (EXPORT) ---------------- #
+    figma_pdf = st.file_uploader("Upload Figma Export (PDF, optional)", type=["pdf"])
+    pdf_text = None
+    if figma_pdf:
+        try:
+            pdf_bytes = figma_pdf.getvalue()
+            pdf_text = extract_text_from_pdf(io.BytesIO(pdf_bytes))
+            st.caption("Extracted PDF text (used as UI context for AI)")
+            st.text_area("PDF Text", value=pdf_text[:5000], height=160)
+        except Exception as e:
+            st.warning(f"Could not parse PDF: {e}")
+
     # ---------------- AI YAML GENERATION (OLLAMA) ---------------- #
     st.header("AI YAML Generation (Ollama)")
 
-    if st.button("🚀 Generate YAML with AI"):
-        if not (bug_description or "").strip() or not (manual_steps or "").strip():
-            st.warning("Please enter bug description and manual steps")
-        else:
-            with st.spinner("AI generating..."):
-                yaml_output = generate_yaml_from_ai(bug_description, manual_steps)
+    fast_mode = st.checkbox("⚡ Fast Mode (Skip AI) - use default YAML")
 
+    if st.button("🚀 Generate YAML with AI"):
+        if fast_mode:
+            from ai_engine.ollama_helper import _SAFE_FALLBACK_YAML  # type: ignore[attr-defined]
+            yaml_output = _SAFE_FALLBACK_YAML
+        else:
+            if not (bug_description or "").strip() or not (manual_steps or "").strip():
+                st.warning("Please enter bug description and manual steps")
+                yaml_output = None
+            else:
+                with st.spinner("AI generating..."):
+                    yaml_output = generate_yaml_from_ai(bug_description, manual_steps, pdf_text=pdf_text)
+
+        if yaml_output:
             st.session_state["generated_yaml"] = yaml_output
 
             # Extract steps immediately for execution.
@@ -102,6 +124,14 @@ def main():
     if st.session_state.get("generated_yaml"):
         st.subheader("Generated YAML")
         st.code(st.session_state["generated_yaml"], language="yaml")
+
+        # Demo-stability warning: English labels usually mean wrong UI text.
+        english_markers = ["\"Login\"", "\"Password\"", "\"Phone\"", "target: \"Login\"", "field: \"Password\"", "field: \"Phone\""]
+        if any(m in st.session_state["generated_yaml"] for m in english_markers):
+            st.warning(
+                "YAML contains English labels (Login/Phone/Password). For Spanish UI, update to your real labels like "
+                "\"Entrar a mi cuenta\", \"Teléfono\", \"Contraseña\" to avoid element-not-found during the demo."
+            )
 
         if "generated_steps" in st.session_state:
             st.caption("Extracted steps")
@@ -197,7 +227,8 @@ def run_test(platform):
                 test_data = st.session_state.get("parsed_test_data") or {}
                 result = run_test_case(test_case, test_data, platform=platform)
             else:
-                result = run_structured_test(platform, steps, "")
+                bug_desc = st.session_state.get("bug_description") or ""
+                result = run_structured_test(platform, steps, bug_desc)
 
         st.session_state["result"] = result
 

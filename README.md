@@ -105,7 +105,7 @@ pip install fastapi "uvicorn[standard]" streamlit openai pandas appium-python-cl
   appium
   ```
 
-- **iOS:** Boot a simulator, e.g. `open -a Simulator` and choose an iPhone (e.g. iPhone 16e).  
+- **iOS:** Boot a simulator, e.g. `open -a Simulator` and choose an iPhone (e.g. iPhone 17 Pro).  
 - **Android:** Start an AVD and ensure `adb devices` lists it.
 
 ---
@@ -187,7 +187,7 @@ pip install fastapi "uvicorn[standard]" streamlit openai pandas appium-python-cl
 ## Configuration
 
 - **Appium URL:** Default is `http://127.0.0.1:4723` (set in `dashboard.py`, `executor.py`, and `ios_test.py`).  
-- **iOS device/version:** In `ios_test.py` and `executor.py`, set `DEVICE_NAME` / `platform_version` to match your simulator (e.g. iPhone 16e, 26.3).  
+- **iOS device/version:** In `ios_test.py` and `executor.py`, set `DEVICE_NAME` / `platform_version` to match your simulator (e.g. iPhone 17 Pro, 26.3).  
 - **Android:** Executor uses `com.android.settings`; use an AVD with Settings available.
 
 ---
